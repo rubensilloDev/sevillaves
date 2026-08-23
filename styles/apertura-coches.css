@@ -1,0 +1,962 @@
+/* =========================================
+   ESTILOS DE LA PÁGINA APERTURA DE COCHES
+========================================= */
+
+/* =========================================
+   HERO - SECCIÓN PRINCIPAL
+========================================= */
+
+/* Contenedor general del hero: imagen de fondo y posición relativa */
+.hero {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(120px, 14vw, 180px) 10% 10%;
+  background-image: url('../img/img-cerrajero-apertura-coche.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Capa superpuesta con degradado de Accent (naranja) a Blanco */
+.capa-degradado-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(240, 78, 35, 0.85) 0%, transparent 20%, transparent 60%, rgba(255, 255, 255, 0.98) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Contenedor del contenido del hero: dos divs en columna */
+.contenido-hero {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Primer div: alineado a la izquierda, contiene título y botones */
+.hero-primer-div {
+  align-self: flex-start;
+  width: 85%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Encabezado principal H1 en color blanco con sombra protectora */
+.h1-hero {
+  font-size: var(--tamano-h1);
+  color: #FFFFFF;
+  font-weight: 900;
+  line-height: 80%;
+  letter-spacing: -2px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+/* Palabra o término destacado en color Accent */
+.h1-hero .destacado {
+  color: var(--color-accent);
+}
+
+/* Contenedor de botones alineado a la izquierda bajo el H1 */
+.acciones-hero {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Ajustes finos de los botones del hero */
+.acciones-hero .boton-principal,
+.acciones-hero .boton-secundario {
+  padding: 15px 30px;
+}
+
+/* Botón secundario del hero con fondo blanco */
+.acciones-hero .boton-secundario {
+  background-color: #FFFFFF;
+  color: var(--color-primario);
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.acciones-hero .boton-secundario:hover {
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+  border-color: var(--color-accent);
+}
+
+/* Segundo div: situado debajo y alineado a la derecha, contiene la bajada */
+.hero-segundo-div {
+  align-self: flex-end;
+  width: 55%;
+  text-align: right;
+}
+
+/* Párrafo descriptivo de bajada en color normal text */
+.texto-hero {
+  font-size: var(--tamano-texto-grande);
+  color: #FFFFFF;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-left: auto;
+  max-width: 90%;
+}
+
+/* =========================================
+   PROBLEMAS ANTE LOS QUE ACTUAMOS - SEGUNDA SECCIÓN
+========================================= */
+
+/* Contenedor principal de la sección */
+.seccion-problemas {
+  width: 100%;
+  padding: 6% 10%;
+  background-color: var(--color-fondo);
+}
+
+/* Contenedor general en columna (3 divs principales) */
+.contenido-seccion-problemas {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Div 1 — Introducción alineada a la izquierda */
+.introduccion-problemas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 24px;
+  width: 100%;
+}
+
+.textos-introduccion-problemas {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.h2-problemas {
+  font-size: var(--tamano-h2);
+  color: var(--color-primario);
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: -1.8px;
+}
+
+.acciones-introduccion-problemas {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Div 2 — Contenedor central (Grid de 3 columnas) */
+.grid-problemas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+/* Columnas laterales de tarjetas */
+.columna-tarjetas-problemas {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Tarjeta individual */
+.tarjeta-problema-item {
+  background-color: rgba(240, 78, 35, 0.05);
+  border: none;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0px 5px 5px 0px rgba(19, 49, 92, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-problema-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 15px 0px rgba(19, 49, 92, 0.35);
+}
+
+/* Div 1 de la tarjeta: Icono */
+.tarjeta-problema-item .icono-problema {
+  width: 48px;
+  height: 48px;
+  color: #FFFFFF;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.icono-problema {
+  margin: 0 auto;
+  background-color: var(--color-background-icons);
+}
+
+.icono-problema i {
+  color: var(--color-accent);
+  font-size: 30px;
+}
+
+/* Div 2 de la tarjeta: Textos */
+.contenido-tarjeta-problema {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.h3-problema {
+  font-size: 1.7rem;
+  color: var(--color-primario);
+  font-weight: 700;
+  line-height: 75%;
+}
+
+.texto-problema {
+  font-size: var(--tamano-texto-normal);
+  color: var(--color-texto-parrafo);
+  line-height: 1.5;
+}
+
+/* Columna central: Imagen vertical */
+.columna-imagen-problemas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-problemas {
+  width: 100%;
+  height: 100%;
+  max-height: 620px;
+  object-fit: cover;
+  object-position: 75% center;
+  border-radius: 20px;
+  box-shadow: 0px 8px 25px rgba(11, 31, 58, 0.15);
+}
+
+/* Div 3 — Botones inferiores */
+.acciones-inferiores-problemas {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* =========================================
+   RESULTADOS GARANTIZADOS - TERCERA SECCIÓN
+========================================= */
+
+/* Contenedor principal de la sección */
+.seccion-resultados {
+  width: 100%;
+  padding: 6% 10%;
+  background-color: var(--color-fondo);
+}
+
+/* Contenedor del contenido en columna */
+.contenido-seccion-resultados {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Div 1 - Introducción alineada a la izquierda */
+.introduccion-resultados {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 24px;
+  width: 100%;
+}
+
+.textos-introduccion-resultados {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.h2-resultados {
+  font-size: var(--tamano-h2);
+  color: var(--color-primario);
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: -1.8px;
+}
+
+.texto-introduccion-problemas,
+.texto-introduccion-resultados,
+.texto-introduccion-disponibilidad {
+  font-size: var(--tamano-texto-normal);
+  color: var(--color-texto-parrafo);
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.acciones-introduccion-resultados {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Div 2 - Grid de tarjetas de 3 columnas */
+.grid-tarjetas-resultados {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Estilos individuales de cada tarjeta de resultado */
+.tarjeta-resultado-item {
+  background: linear-gradient(to bottom right, var(--color-primario), var(--color-secundario));
+  box-shadow: 0px 0px 10px 0px var(--color-primario);
+  border-radius: 16px;
+  padding: 36px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-resultado-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 0px rgba(11, 31, 58, 0.4);
+}
+
+/* Div 1 de la tarjeta: Icono con fondo blanco */
+.icono-resultado {
+  width: 56px;
+  height: 56px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: var(--color-primario);
+  flex-shrink: 0;
+}
+
+/* Div 2 de la tarjeta: Contenido (H3 y Párrafo) */
+.contenido-tarjeta-resultado {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.h3-resultado {
+  font-size: var(--tamano-h3);
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 75%;
+}
+
+.texto-resultado {
+  font-size: var(--tamano-texto-normal);
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+
+/* =========================================
+   DISPONIBILIDAD - CUARTA SECCIÓN
+========================================= */
+
+/* Contenedor general de la sección con fondo gradiente lineal diagonal */
+.seccion-disponibilidad {
+  width: 100%;
+  padding: 3% 5%;
+  background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-secundario) 100%);
+}
+
+/* Grid principal de 2 columnas */
+.contenido-seccion-disponibilidad {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Columna izquierda: H2 en blanco */
+.disponibilidad-columna-izq {
+  display: flex;
+  align-items: center;
+}
+
+.h2-disponibilidad {
+  font-size: var(--tamano-h2);
+  color: #FFFFFF;
+  font-weight: 900;
+  line-height: 85%;
+  letter-spacing: -1.8px;
+}
+
+/* Columna derecha: textos y botones alineados a la derecha */
+.disponibilidad-columna-der {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: right;
+  align-items: flex-end;
+}
+
+/* Div 1: Texto en blanco con 70% de opacidad */
+.textos-disponibilidad {
+  width: 100%;
+}
+
+.texto-disponibilidad {
+  font-size: var(--tamano-texto-normal);
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+
+/* Div 2: Botonera */
+.acciones-disponibilidad {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.acciones-disponibilidad .boton-secundario {
+  color: #FFFFFF;
+  background-color: transparent;
+  border-color: var(--color-accent);
+}
+
+/* =========================================
+   PRECIOS - QUINTA SECCIÓN
+========================================= */
+
+.seccion-precios {
+  width: 100%;
+  padding: 6% 10%;
+  background-color: var(--color-fondo);
+}
+
+.contenido-seccion-precios {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* Div 1 - Cabecera de Sección */
+.contenedor-encabezado-precios {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.h2-precios {
+  font-size: var(--tamano-h2);
+  color: var(--color-primario);
+  font-weight: 900;
+  line-height: 85%;
+  letter-spacing: -1.8px;
+}
+
+.texto-precios {
+  font-size: var(--tamano-texto-normal);
+  color: var(--color-texto-parrafo);
+  line-height: 1.6;
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+.acciones-precios {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+/* Div 2 - Grid de Precios */
+.grid-precios {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 3%;
+}
+
+/* Tarjeta de precio estándar */
+.precio-item {
+  width: calc((100% - 6%) / 3);
+  min-height: 450px;
+  padding: 3% 2.5%;
+  background-color: var(--color-fondo-cards);
+  border: 1px solid #C4C6CE;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.precio-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(11, 31, 58, 0.1);
+}
+
+/* Tarjeta destacada */
+.precio-item.tarjeta-destacada {
+  background-color: rgba(240, 78, 35, 0.15);
+  border: 2px solid var(--color-accent-hover);
+  box-shadow: 0 12px 35px rgba(240, 78, 35, 0.35);
+  transform: scale(1.08);
+}
+
+.precio-item.tarjeta-destacada:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 35px rgba(240, 78, 35, 0.45);
+}
+
+.cabecera-tarjeta-precio {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.h3-precio {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 85%;
+  letter-spacing: -1px;
+  color: var(--color-primario);
+}
+
+.bloque-precio {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.precio-tarjeta {
+  font-family: var(--fuente-encabezados);
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 85%;
+  letter-spacing: -1.8px;
+  color: var(--color-primario);
+}
+
+.subtexto-precio {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-texto-parrafo);
+}
+
+.lista-precio {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fila-precio {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: var(--tamano-texto-pequeno);
+  line-height: 1.4;
+  color: var(--color-texto-parrafo);
+}
+
+.fila-precio i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  background-color: transparent;
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+  color: var(--color-accent);
+  font-size: 13px;
+}
+
+.boton-precio {
+  width: 100%;
+  text-align: center;
+}
+
+/* =========================================
+   SECCIÓN CTA FINAL - SÉPTIMA SECCIÓN
+========================================= */
+
+/* Contenedor principal de la sección */
+.seccion-cta-final {
+  width: 100%;
+  padding: 6% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor interno de contenido con degradado y posición relativa */
+.contenido-cta-final {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4.5rem 5%;
+  background: linear-gradient(to bottom, var(--color-primario), var(--color-secundario));
+  border-radius: 24px;
+  box-shadow: 0px 0px 20px 0px rgba(19, 49, 92, 0.7);
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+  gap: 24px;
+}
+
+/* Capa contenedora de la imagen con overflow hidden para recortarla al borde redondeado */
+.capa-imagen-cta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Imagen superpuesta posicionada absoluta respecto al contenedor interno */
+.imagen-cta-superpuesta {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  max-height: 550px;
+  border-radius: 24px;
+  opacity: 70%;
+  object-fit: contain;
+  object-position: bottom right;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Icono decorativo flotante abajo a la izquierda dentro del contenedor interno */
+.icono-decorativo-cta {
+  position: absolute;
+  bottom: -70px;
+  left: -20px;
+  rotate: -10deg;
+  font-size: 180px;
+  color: var(--color-accent);
+  text-shadow: 0px 0px 15px var(--color-secundario);
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* Div 1 — Título: H2 en color naranja acento */
+.cta-div-titulo {
+  position: relative;
+  z-index: 2;
+  width: 75%;
+}
+
+.h2-cta-final {
+  font-size: var(--tamano-h2);
+  color: var(--color-accent);
+  font-weight: 900;
+  line-height: 85%;
+  letter-spacing: -1.8px;
+}
+
+/* Div 2 — Párrafo: en negrita con 85% de opacidad */
+.cta-div-parrafo {
+  position: relative;
+  z-index: 2;
+  width: 60%;
+}
+
+.texto-cta-final {
+  font-size: var(--tamano-texto-grande);
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: bold;
+  line-height: 1.5;
+  max-width: 700px;
+}
+
+/* Div 3 — Botonera */
+.acciones-cta-final {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+/* Botón terciario naranja con icono de flecha a la derecha */
+.boton-terciario-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  font-weight: 700;
+  font-size: var(--tamano-texto-normal);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.boton-terciario-cta:hover {
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   RESPONSIVE - MÓVIL
+========================================= */
+
+@media (max-width: 768px) {
+
+  /* Contenedor del contenido del hero: centrado en columna */
+  .contenido-hero {
+    gap: 2rem;
+  }
+
+  /* Primer div: centrado en móvil */
+  .hero-primer-div {
+    width: 100%;
+    gap: 24px;
+  }
+
+  /* Segundo div: centrado en móvil */
+  .hero-segundo-div {
+    width: 100%;
+  }
+
+  /* Párrafo descriptivo centrado */
+  .texto-hero {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  /* RESPONSIVE - PROBLEMAS */
+  .seccion-problemas {
+    padding: 10% 6%;
+  }
+
+  .contenido-seccion-problemas {
+    gap: 2.5rem;
+  }
+
+  .introduccion-problemas {
+    align-items: center;
+    text-align: center;
+  }
+
+  .acciones-introduccion-problemas {
+    justify-content: center;
+  }
+
+  .grid-problemas {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .columna-imagen-problemas {
+    order: initial;
+  }
+
+  .imagen-problemas {
+    max-height: 350px;
+  }
+
+  .tarjeta-problema-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+  }
+
+  .acciones-inferiores-problemas {
+    justify-content: center;
+  }
+
+  /* RESPONSIVE - RESULTADOS GARANTIZADOS */
+  .seccion-resultados {
+    padding: 10% 6%;
+  }
+
+  .contenido-seccion-resultados {
+    gap: 2.5rem;
+  }
+
+  .introduccion-resultados {
+    align-items: center;
+    text-align: center;
+  }
+
+  .acciones-introduccion-resultados {
+    justify-content: center;
+  }
+
+  .grid-tarjetas-resultados {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* RESPONSIVE - DISPONIBILIDAD */
+  .seccion-disponibilidad {
+    padding: 10% 6%;
+  }
+
+  .contenido-seccion-disponibilidad {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .disponibilidad-columna-izq {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .disponibilidad-columna-der {
+    text-align: center;
+    align-items: center;
+  }
+
+  .acciones-disponibilidad {
+    justify-content: center;
+  }
+
+  /* RESPONSIVE - PRECIOS */
+  .seccion-precios {
+    padding: 10% 6%;
+  }
+
+  .contenido-seccion-precios {
+    gap: 3rem;
+  }
+
+  .contenedor-encabezado-precios {
+    gap: 1.5rem;
+  }
+
+  .texto-precios {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .grid-precios {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .precio-item {
+    width: 100%;
+    padding: 30px 24px;
+    min-height: auto;
+    gap: 2rem;
+  }
+
+  .precio-item.tarjeta-destacada {
+    transform: none;
+  }
+
+  .precio-item.tarjeta-destacada:hover {
+    transform: scale(1.02);
+  }
+
+  /* RESPONSIVE - CTA FINAL */
+  .seccion-cta-final {
+    padding: 12% 6%;
+    min-height: auto;
+  }
+
+  .imagen-cta-superpuesta {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: 70% center;
+    opacity: 0.35;
+  }
+
+  .icono-decorativo-cta {
+    font-size: 110px;
+    bottom: -55px;
+    left: -10px;
+    opacity: 1;
+  }
+
+  .acciones-cta-final .boton-principal,
+  .acciones-cta-final .boton-terciario-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}

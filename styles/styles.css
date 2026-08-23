@@ -76,6 +76,8 @@
   --color-accent-hover: #D63E17;
   /* Naranja accent en hover */
   --color-fondo-cards: #F5F3F6;
+  /* Color del fondo de los iconos */
+  --color-background-icons: rgba(240, 78, 35, 0.08);
   /* Fondo de las tarjetas */
   --color-accent-suave: rgba(240, 78, 35, 0.05);
   /* Accent al 5% de opacidad */
