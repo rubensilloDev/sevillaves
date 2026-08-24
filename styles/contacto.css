@@ -13,7 +13,7 @@
   width: 100%;
   margin: 0 auto;
   padding: clamp(120px, 14vw, 180px) 10% 10%;
-  background-image: url('../img/img-furgoneta-movimiento.jpeg');
+  background-image: url('../img/img-furgoneta-movimiento.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
