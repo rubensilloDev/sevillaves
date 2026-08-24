@@ -88,8 +88,19 @@
   margin-top: 10px;
 }
 
-/* Ajustes responsive móviles para la sección 404 */
-@media (max-width: 480px) {
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+
+  /* Contenedor principal de error en tablet */
+  .contenido-seccion-error-404 {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 764px) {
 
   /* Contenedor de botones de acción en móviles */
   .acciones-error {

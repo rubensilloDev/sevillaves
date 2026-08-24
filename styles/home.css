@@ -1171,9 +1171,9 @@
 }
 
 /* =========================================
-   RESPONSIVE MÓVIL (768px)
+   RESPONSIVE MÓVIL (764px)
 ========================================= */
-@media (max-width: 768px) {
+@media (max-width: 764px) {
 
   /* HERO MÓVIL - optimización de espacio, botones full-width y 3 imágenes centradas */
   .hero {

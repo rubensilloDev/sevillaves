@@ -247,7 +247,42 @@ p {
   box-shadow: 0 0 10px var(--color-secundario);
 }
 
-/* Efecto hover común para todos los botones: escala ligera y rotación */
+/* Botón 5 - Btn Naranja Tarjetas (para tarjetas de servicios con icono) */
+.btn-naranja-tarjetas {
+  margin-top: auto;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 22px;
+  border: 1px solid var(--color-accent);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--color-accent);
+  font-family: var(--fuente-general);
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-naranja-tarjetas:hover {
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.btn-naranja-tarjetas i {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.btn-naranja-tarjetas:hover i {
+  transform: translateX(4px);
+}
+
+/* Efecto hover común para todos los botones principales: escala ligera y rotación */
 .boton-principal:hover,
 .boton-secundario:hover,
 .boton-terciario:hover,
@@ -471,11 +506,9 @@ p {
   vertical-align: middle;
 }
 
-@media (min-width: 769px) {
-  .item-menu-desplegable:hover .icono-desplegable {
-    transform: rotate(180deg);
-    color: var(--color-accent);
-  }
+.item-menu-desplegable:hover .icono-desplegable {
+  transform: rotate(180deg);
+  color: var(--color-accent);
 }
 
 .submenu-servicios {
@@ -507,12 +540,10 @@ p {
   height: 12px;
 }
 
-@media (min-width: 769px) {
-  .item-menu-desplegable:hover .submenu-servicios {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(0);
-  }
+.item-menu-desplegable:hover .submenu-servicios {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
 }
 
 .item-submenu {
@@ -840,7 +871,21 @@ p {
    RESPONSIVE - CABECERA
 ========================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .cabecera {
+    width: 94%;
+  }
+
+  .menu-navegacion {
+    gap: 16px;
+  }
+
+  .enlace-menu {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 764px) {
   :root {
     --tamano-h1: 3.2rem;
     --tamano-h2: 2.5rem;
@@ -1077,12 +1122,13 @@ p {
 .boton-volver-arriba:focus {
   background-color: var(--color-accent);
   color: #FFFFFF;
-  transform: scale(1.1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(240, 78, 35, 0.4);
 }
 
 .boton-volver-arriba:hover i,
 .boton-volver-arriba:active i,
 .boton-volver-arriba:focus i {
   transform: rotate(-90deg);
-  /* En hover/clic: rota hacia arriba */
+  /* Rotación hacia arriba al pasar el cursor */
 }

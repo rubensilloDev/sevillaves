@@ -1,0 +1,717 @@
+/* =========================================
+   ESTILOS DE LA PÁGINA CONTACTO
+========================================= */
+
+/* =========================================
+   HERO - SECCIÓN PRINCIPAL
+========================================= */
+
+/* Contenedor general del hero: imagen de fondo y posición relativa */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(120px, 14vw, 180px) 10% 10%;
+  background-image: url('../img/img-furgoneta-movimiento.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Capa superpuesta con degradado de Accent (naranja) a Negro al medio y Blanco al final */
+.capa-degradado-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(240, 78, 35, 0.85) 0%, rgba(0, 0, 0, 0.35) 20%, rgba(0, 0, 0, 0.1) 65%, rgba(255, 255, 255, 0.98) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Contenedor del contenido del hero: dos divs en columna alineados a la izquierda */
+.contenido-hero {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Primer div: contiene el título principal alineado a la izquierda */
+.hero-primer-div {
+  align-self: flex-start;
+  width: 85%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Encabezado principal H1 en color blanco con sombra protectora */
+.h1-hero {
+  font-size: var(--tamano-h1);
+  color: #FFFFFF;
+  font-weight: 900;
+  line-height: 85%;
+  letter-spacing: -2px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  text-align: left;
+}
+
+/* Palabra o término destacado en color Accent */
+.h1-hero .destacado {
+  color: var(--color-accent);
+}
+
+/* Segundo div: contiene el texto descriptivo y los botones alineados a la izquierda */
+.hero-segundo-div {
+  align-self: flex-start;
+  width: 75%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Párrafo descriptivo de bajada alineado a la izquierda con sombra protectora */
+.texto-hero {
+  font-size: var(--tamano-texto-grande);
+  color: #FFFFFF;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  margin-left: 0;
+  max-width: 90%;
+}
+
+/* Contenedor de botones alineado a la izquierda */
+.acciones-hero {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Ajustes finos de los botones del hero */
+.acciones-hero .boton-principal,
+.acciones-hero .boton-secundario {
+  padding: 15px 30px;
+}
+
+/* Botón secundario del hero con fondo blanco y sombra */
+.acciones-hero .boton-secundario {
+  background-color: #FFFFFF;
+  color: var(--color-primario);
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.acciones-hero .boton-secundario:hover {
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+  border-color: var(--color-accent);
+}
+
+/* =========================================
+   CANALES DE CONTACTO - SEGUNDA SECCIÓN
+========================================= */
+
+/* Contenedor general de la sección de canales de contacto */
+.seccion-canales-contacto {
+  width: 100%;
+  padding: 6% 10%;
+  background-color: var(--color-fondo);
+}
+
+/* Contenedor del contenido en columna */
+.contenido-canales-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Div 1 - Introducción alineada a la izquierda */
+.introduccion-canales-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Título H2 alineado a la izquierda */
+.h2-canales-contacto {
+  font-size: var(--tamano-h2);
+  color: var(--color-primario);
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: -1.8px;
+  text-align: left;
+}
+
+/* Texto introductorio del encabezado */
+.texto-introduccion-canales {
+  font-size: var(--tamano-texto-normal);
+  color: var(--color-texto-parrafo);
+  line-height: 1.6;
+  max-width: 800px;
+  text-align: left;
+}
+
+/* Div 2 - Grid de 3 tarjetas de canales de contacto */
+.grid-canales-contacto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Estilos de cada tarjeta individual de contacto */
+.canal-contacto-item {
+  background-color: var(--color-fondo-cards);
+  border: 2px solid var(--color-accent-hover);
+  border-radius: 12px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.canal-contacto-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(214, 62, 23, 0.3);
+  border-color: var(--color-accent);
+}
+
+/* Icono de la tarjeta de contacto */
+.icono-canal-contacto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background-color: rgba(240, 78, 35, 0.1);
+  color: var(--color-accent);
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+/* Título H3 de la tarjeta */
+.h3-canal-contacto {
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+  color: var(--color-primario);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Párrafo descriptivo de la tarjeta */
+.texto-canal-contacto {
+  font-size: var(--tamano-texto-normal);
+  color: var(--color-texto-parrafo);
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+
+
+/* =========================================
+   FORMULARIO DE PRESUPUESTO - TERCERA SECCIÓN
+========================================= */
+
+/* Contenedor general de la sección del formulario */
+.seccion-formulario-contacto {
+  width: 100%;
+  padding: 6% 10%;
+  background-color: var(--color-fondo);
+  position: relative;
+  overflow: visible;
+}
+
+/* Destello decorativo a la izquierda entre la sección de canales y el formulario */
+.destello-formulario-izquierda {
+  top: -150px;
+  left: -150px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Contenedor del contenido en columna */
+.contenido-formulario-contacto {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Div 1 - Introducción centrada horizontalmente */
+.introduccion-formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Título H2 centrado */
+.h2-formulario-contacto {
+  font-size: var(--tamano-h2);
+  color: var(--color-primario);
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: -1.8px;
+  text-align: center;
+}
+
+/* Texto introductorio centrado */
+.texto-introduccion-formulario {
+  font-size: var(--tamano-texto-normal);
+  color: var(--color-texto-parrafo);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Subtexto introductorio centrado */
+.subtexto-introduccion-formulario {
+  font-size: var(--tamano-texto-normal);
+  color: var(--color-accent);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Tarjeta principal que engloba el título centrado y el grid del formulario */
+.tarjeta-formulario-contacto {
+  background-color: var(--color-fondo-cards);
+  border: 1px solid var(--color-accent-hover);
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-shadow: 0 8px 30px rgba(11, 31, 58, 0.08);
+  margin: 0 auto;
+  width: 70%;
+}
+
+/* Título H3 "Formulario de contacto" centrado horizontalmente */
+.h3-tarjeta-formulario {
+  font-size: 1.8rem;
+  color: var(--color-primario);
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+/* Formulario de contacto */
+.cta-tarjeta-formulario {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+  width: 90%;
+}
+
+.grupo-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label-cta {
+  font-weight: 600;
+  color: var(--color-primario);
+  font-size: 0.95rem;
+}
+
+.opcional {
+  color: var(--color-texto-parrafo);
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+.input-cta,
+.select-prefijo-cta {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  font-family: var(--fuente-general);
+  font-size: 1rem;
+  background-color: #FFFFFF;
+  color: var(--color-primario);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-cta:focus,
+.select-prefijo-cta:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(240, 78, 35, 0.15);
+}
+
+.contenedor-input-telefono {
+  display: flex;
+  gap: 8px;
+}
+
+.select-prefijo-cta {
+  width: 130px;
+  flex-shrink: 0;
+}
+
+.textarea-contacto {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.casilla-terminos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.checkbox-cta {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-accent);
+  cursor: pointer;
+}
+
+.texto-terminos-cta {
+  font-size: 0.9rem;
+  color: var(--color-texto-parrafo);
+  cursor: pointer;
+}
+
+
+/* =========================================
+   PASO A PASO POR CANAL (PESTAÑAS) - SECCIÓN PROCESO
+========================================= */
+
+/* Contenedor general de la sección del proceso */
+.seccion-proceso-pasos {
+  width: 100%;
+  padding: 6% 10%;
+  background-color: var(--color-fondo);
+  position: relative;
+}
+
+/* Contenedor del contenido en columna */
+.contenido-proceso-pasos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Div introductorio centrado */
+.introduccion-proceso-pasos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.h2-proceso-pasos {
+  font-size: var(--tamano-h2);
+  color: var(--color-primario);
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: -1.8px;
+  text-align: center;
+}
+
+.texto-introduccion-proceso {
+  font-size: var(--tamano-texto-normal);
+  color: var(--color-texto-parrafo);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Contenedor de las pestañas */
+.contenedor-pestanas-proceso {
+  display: inline-flex;
+  gap: 12px;
+  background-color: var(--color-fondo-cards);
+  padding: 8px;
+  border-radius: 16px;
+  border: 1px solid var(--color-accent-hover);
+  box-shadow: 0 4px 20px rgba(11, 31, 58, 0.05);
+}
+
+/* Botón pestaña individual */
+.btn-pestana-proceso {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 12px;
+  border: none;
+  background: transparent;
+  color: var(--color-primario);
+  font-family: var(--fuente-general);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-pestana-proceso i {
+  font-size: 1.2rem;
+  color: var(--color-texto-parrafo);
+  transition: color 0.3s ease;
+}
+
+.btn-pestana-proceso:hover {
+  color: var(--color-accent);
+}
+
+.btn-pestana-proceso:hover i {
+  color: var(--color-accent);
+}
+
+/* Estado activo de la pestaña */
+.btn-pestana-proceso.activo {
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(240, 78, 35, 0.3);
+}
+
+.btn-pestana-proceso.activo i {
+  color: #FFFFFF;
+}
+
+/* Paneles de contenido (pestañas) */
+.panel-proceso {
+  display: none;
+  width: 100%;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.panel-proceso.activo {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Grid de 4 tarjetas paso a paso */
+.grid-pasos-proceso {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 0 auto;
+  width: 85%;
+}
+
+/* Tarjeta de paso individual */
+.tarjeta-paso-proceso {
+  position: relative;
+  background-color: var(--color-fondo-cards);
+  border: 1px solid var(--color-accent-hover);
+  border-radius: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  box-shadow: 0 6px 20px rgba(11, 31, 58, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.tarjeta-paso-proceso:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(214, 62, 23, 0.18);
+  border-color: var(--color-accent);
+}
+
+/* Número indicador del paso */
+.numero-paso {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: rgba(240, 78, 35, 0.18);
+  font-family: var(--fuente-encabezados);
+  line-height: 1;
+}
+
+/* Icono del paso */
+.icono-paso {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background-color: rgba(240, 78, 35, 0.1);
+  color: var(--color-accent);
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+/* Título H3 del paso */
+.h3-paso {
+  font-size: 1.25rem;
+  color: var(--color-primario);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+}
+
+/* Texto explicativo del paso */
+.texto-paso {
+  font-size: 0.95rem;
+  color: var(--color-texto-parrafo);
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+
+  /* HERO */
+  .hero-primer-div {
+    width: 85%;
+  }
+
+  /* CANALES DE CONTACTO */
+  .grid-canales-contacto {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* FORMULARIO */
+  .tarjeta-formulario-contacto {
+    width: 85%;
+    padding: 32px 28px;
+  }
+
+  .cta-tarjeta-formulario {
+    width: 100%;
+  }
+
+  /* PROCESO */
+  .grid-pasos-proceso {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 764px) {
+
+  /* CANALES DE CONTACTO */
+  .seccion-canales-contacto {
+    padding: 10% 6%;
+  }
+
+  .introduccion-canales-contacto {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  /* FORMULARIO */
+  .seccion-formulario-contacto {
+    padding: 10% 6%;
+  }
+
+  .contenido-formulario-contacto {
+    gap: 2.5rem;
+  }
+
+  .introduccion-formulario-contacto {
+    max-width: 100%;
+  }
+
+  .tarjeta-formulario-contacto {
+    width: 100%;
+    padding: 24px 18px;
+    gap: 24px;
+    border-radius: 12px;
+  }
+
+  .h3-tarjeta-formulario {
+    font-size: 1.4rem;
+  }
+
+  .cta-tarjeta-formulario {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .boton-enviar-formulario {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* PROCESO */
+  .seccion-proceso-pasos {
+    padding: 10% 6%;
+  }
+
+  .contenedor-pestanas-proceso {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .btn-pestana-proceso {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+  }
+
+  .grid-pasos-proceso {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .tarjeta-paso-proceso {
+    padding: 24px 20px;
+  }
+}

@@ -264,38 +264,7 @@
   width: 100%;
 }
 
-.boton-caso-tarjeta {
-  width: fit-content;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 12px 22px;
-  border: 1px solid var(--color-accent);
-  border-radius: 16px;
-  background: transparent;
-  color: var(--color-accent);
-  font-family: var(--fuente-general);
-  font-weight: bold;
-  font-size: 15px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
 
-.boton-caso-tarjeta:hover {
-  background-color: var(--color-accent);
-  color: #FFFFFF;
-  transform: translateY(-2px);
-}
-
-.boton-caso-tarjeta i {
-  font-size: 18px;
-  transition: transform 0.3s ease;
-}
-
-.boton-caso-tarjeta:hover i {
-  transform: translateX(4px);
-}
 
 /* =========================================
    CÓMO FUNCIONA - TERCERA SECCIÓN
@@ -795,10 +764,24 @@
 }
 
 /* =========================================
-   RESPONSIVE - MÓVIL
+   RESPONSIVE - TABLET (1024px) Y MÓVIL (764px)
 ========================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .hero-primer-div {
+    width: 85%;
+  }
+
+  .contenido-seccion-situaciones-urgencia {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-como-funciona {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 764px) {
 
   /* Contenedor del contenido del hero: centrado en columna */
   .contenido-hero {

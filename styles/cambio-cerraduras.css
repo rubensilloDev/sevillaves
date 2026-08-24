@@ -228,39 +228,7 @@
   line-height: 1.5;
 }
 
-/* Botón contratar servicio */
-.boton-caso-tarjeta {
-  margin-top: auto;
-  width: fit-content;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 22px;
-  border: 1px solid var(--color-accent);
-  border-radius: 16px;
-  background: transparent;
-  color: var(--color-accent);
-  font-family: var(--fuente-general);
-  font-weight: bold;
-  font-size: 15px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
 
-.boton-caso-tarjeta:hover {
-  background-color: var(--color-accent);
-  color: #FFFFFF;
-  transform: translateY(-2px);
-}
-
-.boton-caso-tarjeta i {
-  font-size: 18px;
-  transition: transform 0.3s ease;
-}
-
-.boton-caso-tarjeta:hover i {
-  transform: translateX(4px);
-}
 
 /* Div 2.2 - Tarjeta inferior a ancho completo */
 .caso-tarjeta-inferior {
@@ -405,39 +373,7 @@
   margin: 0;
 }
 
-.boton-opcion {
-  margin-top: 8px;
-  width: fit-content;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 22px;
-  border: 1px solid var(--color-accent);
-  border-radius: 16px;
-  background: transparent;
-  color: var(--color-accent);
-  font-family: var(--fuente-general);
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
 
-.boton-opcion:hover {
-  background-color: var(--color-accent);
-  color: #FFFFFF;
-  transform: translateY(-2px);
-}
-
-.boton-opcion i {
-  font-size: 16px;
-  margin-left: 8px;
-  transition: transform 0.3s ease;
-}
-
-.boton-opcion:hover i {
-  transform: translateX(4px);
-}
 
 /* Columna derecha (imagen) */
 .opciones-imagen-col {
@@ -1273,9 +1209,9 @@
 }
 
 /* =========================================
-   RESPONSIVE - MÓVIL (768px)
+   RESPONSIVE - MÓVIL (764px)
 ========================================= */
-@media (max-width: 768px) {
+@media (max-width: 764px) {
   .hero {
     padding: 100px 5% 40px;
   }

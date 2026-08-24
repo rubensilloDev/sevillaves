@@ -26,7 +26,7 @@ if (btnMenu && menuNavegacion) {
 // Desplegar/plegar el submenú de Servicios al pulsar en "Servicios" en versión móvil
 if (enlaceDesplegable && itemDesplegable) {
   enlaceDesplegable.addEventListener('click', (e) => {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 764) {
       e.preventDefault();
       itemDesplegable.classList.toggle('abierto');
     }
@@ -37,7 +37,7 @@ if (enlaceDesplegable && itemDesplegable) {
 document.querySelectorAll('.enlace-menu, .enlace-submenu').forEach(enlace => {
   enlace.addEventListener('click', (e) => {
     // Si es el disparador de "Servicios" en móvil, no cerramos todo el menú
-    if (enlace === enlaceDesplegable && window.innerWidth <= 768) {
+    if (enlace === enlaceDesplegable && window.innerWidth <= 764) {
       return;
     }
     if (btnMenu) btnMenu.classList.remove('activo');

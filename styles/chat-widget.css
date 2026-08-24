@@ -302,14 +302,24 @@
   color: #FFFFFF;
 }
 
-/* Responsive Ajustes */
-@media (max-width: 480px) {
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+  .chat-widget-window {
+    width: 340px;
+  }
+}
+
+@media (max-width: 764px) {
   .chat-widget-window {
     right: 20px;
     bottom: 160px;
     width: calc(100vw - 40px);
     height: 480px;
   }
+
   .chat-widget-trigger {
     right: 20px;
     bottom: 90px;

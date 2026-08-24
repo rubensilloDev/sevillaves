@@ -1,19 +1,512 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contacta con Apertura Express Sevilla. Cerrajeros urgentes 24h disponibles para vos.">
-  <title>Contacto | Apertura Express Sevilla</title>
+  <meta name="description"
+    content="Contacta con Cerrajero Express Sevilla 24 horas. Atención inmediata por teléfono o WhatsApp y presupuesto sin compromiso. ¡Llegamos en 20-30 minutos!">
+  <!-- Meta title con la kw principal integrada sutilmente + hook comercial -->
+  <title>Contacto Cerrajero Sevilla 24H | Respuesta Inmediata y Presupuesto Sin Compromiso</title>
+
+  <!-- Remix Icon: librería de iconos -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Estilos generales de la web -->
   <link rel="stylesheet" href="styles/styles.css">
+  <!-- Estilos específicos de la página Contacto -->
+  <link rel="stylesheet" href="styles/contacto.css">
+  <!-- Script JS sencillo para el menú responsive -->
   <script src="JavaScript/main.js" defer></script>
 </head>
+
 <body>
-  <main style="padding: 100px 20px; text-align: center; font-family: sans-serif;">
-    <h1 style="font-size: 2.5rem; margin-bottom: 20px;">Contacto</h1>
-    <p style="font-size: 1.2rem; color: #666; margin-bottom: 30px;">Página en construcción. Estamos preparando esta sección para vos.</p>
-    <a href="index.html" class="boton-principal" style="text-decoration: none; padding: 12px 24px; border-radius: 6px; background-color: #0056b3; color: white; display: inline-block;">Volver al Inicio</a>
+
+  <!-- ================= HEADER ================= -->
+  <!-- cabecera-menu -->
+  <header class="cabecera">
+    <!-- navegacion-principal -->
+    <nav class="navegacion">
+      <!-- logo-marca -->
+      <a href="index.html#inicio" class="enlace-logo">
+        <img src="img/logo.png" alt="Logo de Apertura Express Sevilla" title="Apertura Express Sevilla" class="logo">
+      </a>
+
+      <!-- boton-hamburguesa-movil -->
+      <button class="boton-hamburguesa" id="btn-menu" aria-label="Abrir menú de navegación">
+        <div class="linea-hamburguesa"></div>
+        <div class="linea-hamburguesa"></div>
+        <div class="linea-hamburguesa"></div>
+      </button>
+
+      <!-- menu-navegacion -->
+      <ul class="menu-navegacion">
+        <!-- logo-menu-movil -->
+        <li class="item-menu-logo-movil">
+          <img src="img/logo.png" alt="Logo de Apertura Express Sevilla" class="logo-menu-movil">
+        </li>
+
+        <li class="item-menu"><a href="index.html#inicio" class="enlace-menu">Inicio</a></li>
+
+        <!-- item-menu-desplegable-servicios -->
+        <li class="item-menu item-menu-desplegable">
+          <a href="index.html#servicios" class="enlace-menu">Servicios <i class="ri-arrow-down-s-line icono-desplegable"
+              aria-hidden="true"></i></a>
+          <ul class="submenu-servicios">
+            <li class="item-submenu"><a href="cerrajero-urgente.html" class="enlace-submenu">Cerrajero Urgente en
+                Sevilla</a></li>
+            <li class="item-submenu"><a href="cambio-cerraduras.html" class="enlace-submenu">Cambio de Cerraduras</a>
+            </li>
+            <li class="item-submenu"><a href="aperturas-coches.html" class="enlace-submenu">Aperturas de Coches</a></li>
+          </ul>
+        </li>
+
+        <li class="item-menu"><a href="index.html#sobre-nosotros" class="enlace-menu">Sobre Nosotros</a></li>
+        <li class="item-menu"><a href="contacto.html" class="enlace-menu">Contacto</a></li>
+
+        <!-- boton-cta-menu-movil -->
+        <li class="item-menu-cta-movil">
+          <a href="tel:+34600000000" class="boton-principal boton-cta-menu-movil"><i class="ri-phone-line"
+              aria-hidden="true"></i> Llamar ahora</a>
+        </li>
+      </ul>
+      <a href="tel:+34600000000" class="boton-llamar-cabecera">Llamar ahora</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <!-- hero-section -->
+    <section id="inicio" class="hero">
+      <!-- capa-degradado-hero -->
+      <div class="capa-degradado-hero"></div>
+
+      <!-- contenido-hero -->
+      <div class="contenido-hero">
+
+        <!-- hero-primer-div -->
+        <div class="hero-primer-div">
+          <!-- encabezado-hero -->
+          <h1 class="h1-hero">Contacta con <span class="destacado">Apertura Express Sevilla</span></h1>
+        </div>
+
+        <!-- hero-segundo-div -->
+        <div class="hero-segundo-div">
+          <!-- texto-hero -->
+          <p class="texto-hero">Para urgencias, llama o escríbenos por WhatsApp: es la vía más rápida. Si prefieres que
+            te llamemos nosotros, rellena el formulario y te contactamos en breve.</p>
+
+          <!-- acciones-hero -->
+          <div class="acciones-hero">
+            <a href="tel:+34600000000" class="boton-principal"><i class="ri-phone-line" aria-hidden="true"></i> Llamar
+              ahora</a>
+            <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" class="boton-secundario"><i
+                class="ri-whatsapp-line" aria-hidden="true"></i> WhatsApp</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CANALES DE CONTACTO ================= -->
+    <!-- seccion-canales-contacto -->
+    <section class="seccion-canales-contacto">
+      <!-- contenido-canales-contacto -->
+      <div class="contenido-canales-contacto">
+
+        <!-- introduccion-canales-contacto -->
+        <div class="introduccion-canales-contacto">
+          <!-- encabezado-canales-contacto -->
+          <h2 class="h2-canales-contacto">Cómo prefieras: llamada, WhatsApp o formulario</h2>
+          <!-- texto-introduccion-canales -->
+          <p class="texto-introduccion-canales">No todos los casos son iguales, así que tú eliges cómo hablar con
+            nosotros. Si es una urgencia, la llamada es la vía más directa; si tienes tiempo, el formulario también
+            funciona.</p>
+        </div>
+
+        <!-- grid-canales-contacto -->
+        <div class="grid-canales-contacto">
+
+          <!-- canal-contacto-item-1 -->
+          <article class="canal-contacto-item">
+            <!-- icono-canal-contacto -->
+            <div class="icono-canal-contacto">
+              <i class="ri-phone-line" aria-hidden="true"></i>
+            </div>
+            <!-- titulo-canal-contacto -->
+            <h3 class="h3-canal-contacto">Teléfono — respuesta inmediata para urgencias</h3>
+            <!-- texto-canal-contacto -->
+            <p class="texto-canal-contacto">Si necesitas que vayamos ahora mismo, esta es la vía más rápida. Nos cuentas
+              qué ha pasado y te confirmamos hora de llegada y precio en la misma llamada.</p>
+            <!-- boton-canal-contacto -->
+            <a href="tel:+34600000000" class="btn-naranja-tarjetas">Llamar ahora <i class="ri-arrow-right-line"
+                aria-hidden="true"></i></a>
+          </article>
+
+          <!-- canal-contacto-item-2 -->
+          <article class="canal-contacto-item">
+            <!-- icono-canal-contacto -->
+            <div class="icono-canal-contacto">
+              <i class="ri-whatsapp-line" aria-hidden="true"></i>
+            </div>
+            <!-- titulo-canal-contacto -->
+            <h3 class="h3-canal-contacto">WhatsApp — cuéntanos tu caso y te respondemos</h3>
+            <!-- texto-canal-contacto -->
+            <p class="texto-canal-contacto">Sirve tanto para urgencias como para consultas sin prisa: cambio de
+              cerradura, puertas blindadas o una duda de seguridad. Escríbenos y te contestamos con precio orientativo.
+            </p>
+            <!-- boton-canal-contacto -->
+            <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer"
+              class="btn-naranja-tarjetas">Escribir por WhatsApp <i class="ri-arrow-right-line"
+                aria-hidden="true"></i></a>
+          </article>
+
+          <!-- canal-contacto-item-3 -->
+          <article class="canal-contacto-item">
+            <!-- icono-canal-contacto -->
+            <div class="icono-canal-contacto">
+              <i class="ri-draft-line" aria-hidden="true"></i>
+            </div>
+            <!-- titulo-canal-contacto -->
+            <h3 class="h3-canal-contacto">Formulario — para presupuestos sin urgencia</h3>
+            <!-- texto-canal-contacto -->
+            <p class="texto-canal-contacto">Si no necesitas que vayamos ya y prefieres que te llamemos nosotros, rellena
+              el formulario con tu caso y te contactamos con el presupuesto.</p>
+            <!-- boton-canal-contacto -->
+            <a href="#contacto" class="btn-naranja-tarjetas">Ir al formulario <i class="ri-arrow-right-line"
+                aria-hidden="true"></i></a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= FORMULARIO DE PRESUPUESTO ================= -->
+    <!-- seccion-formulario-contacto -->
+    <section id="contacto" class="seccion-formulario-contacto">
+      <!-- destello decorativo a la izquierda entre secciones -->
+      <div class="destello-naranja destello-formulario-izquierda"></div>
+
+      <!-- contenido-formulario-contacto -->
+      <div class="contenido-formulario-contacto">
+
+        <!-- introduccion-formulario-contacto -->
+        <div class="introduccion-formulario-contacto">
+          <!-- encabezado-formulario-contacto -->
+          <h2 class="h2-formulario-contacto">Pide presupuesto sin compromiso</h2>
+          <!-- texto-introduccion-formulario -->
+          <p class="texto-introduccion-formulario">Cuantos más datos nos des, más ajustado será el presupuesto que te
+            demos. Solo te pedimos lo esencial para poder llamarte con una cifra real.</p>
+        </div>
+
+        <!-- tarjeta-formulario-contacto -->
+        <div class="tarjeta-formulario-contacto">
+          <!-- titulo-tarjeta-formulario -->
+          <h3 class="h3-tarjeta-formulario">Formulario de contacto</h3>
+
+          <!-- formulario-contacto -->
+          <form class="cta-tarjeta-formulario" id="form-contacto-pagina" action="#" method="POST" novalidate>
+
+            <!-- grupo-campo-nombre -->
+            <div class="grupo-campo">
+              <label for="nombre-contacto" class="label-cta">Nombre</label>
+              <input type="text" id="nombre-contacto" name="nombre" class="input-cta" placeholder="Tu nombre" required>
+            </div>
+
+            <!-- grupo-campo-telefono -->
+            <div class="grupo-campo">
+              <label for="telefono-contacto" class="label-cta">Teléfono de contacto</label>
+              <div class="contenedor-input-telefono">
+                <select id="prefijo-pais" name="prefijo" class="select-prefijo-cta">
+                  <option value="+34">🇪🇸 +34 (ES)</option>
+                  <option value="+351">🇵🇹 +351 (PT)</option>
+                  <option value="+33">🇫🇷 +33 (FR)</option>
+                  <option value="+44">🇬🇧 +44 (UK)</option>
+                  <option value="+49">🇩🇪 +49 (DE)</option>
+                  <option value="+39">🇮🇹 +39 (IT)</option>
+                  <option value="+1">🇺🇸 +1 (US)</option>
+                  <option value="+54">🇦🇷 +54 (AR)</option>
+                  <option value="+52">🇲🇽 +52 (MX)</option>
+                  <option value="+57">🇨🇴 +57 (CO)</option>
+                  <option value="+56">🇨🇱 +56 (CL)</option>
+                </select>
+                <input type="tel" id="telefono-contacto" name="telefono" class="input-cta input-telefono-con-prefijo"
+                  placeholder="600 000 000" required>
+              </div>
+            </div>
+
+            <!-- grupo-campo-servicio -->
+            <div class="grupo-campo">
+              <label for="servicio-contacto" class="label-cta">Servicio que necesitas</label>
+              <select id="servicio-contacto" name="servicio" class="input-cta" required>
+                <option value="" disabled selected>Selecciona un servicio</option>
+                <option value="Cambio de cerradura">Cambio de cerradura</option>
+                <option value="Puerta blindada o acorazada">Puerta blindada o acorazada</option>
+                <option value="Seguridad residencial">Seguridad residencial</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+
+            <!-- grupo-campo-direccion -->
+            <div class="grupo-campo">
+              <label for="direccion-contacto" class="label-cta">Zona de residencia / Dirección</label>
+              <input type="text" id="direccion-contacto" name="direccion" class="input-cta"
+                placeholder="Ej: Triana, Sevilla Capital" required>
+            </div>
+
+            <!-- casilla-terminos -->
+            <div class="casilla-terminos">
+              <input type="checkbox" id="terminos-contacto" name="terminos" class="checkbox-cta" required>
+              <label for="terminos-contacto" class="texto-terminos-cta">He leído y acepto la política de
+                privacidad</label>
+            </div>
+
+            <!-- boton-enviar-formulario -->
+            <button type="submit" class="boton-principal boton-enviar-formulario">Enviar</button>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= PASO A PASO POR CANAL (PESTAÑAS) ================= -->
+    <!-- seccion-proceso-pasos -->
+    <section class="seccion-proceso-pasos">
+      <!-- contenido-proceso-pasos -->
+      <div class="contenido-proceso-pasos">
+
+        <!-- introduccion-proceso-pasos -->
+        <div class="introduccion-proceso-pasos">
+          <h2 class="h2-proceso-pasos">Cómo lo hacemos paso a paso</h2>
+          <p class="texto-introduccion-proceso">Selecciona el canal de contacto que prefieras para descubrir el proceso
+            de atención y servicio.</p>
+        </div>
+
+        <!-- contenedor-pestanas-proceso -->
+        <div class="contenedor-pestanas-proceso" role="tablist">
+          <button type="button" class="btn-pestana-proceso activo" id="tab-urgencia" data-tab="urgencia" role="tab"
+            aria-selected="true" aria-controls="panel-urgencia">
+            <i class="ri-alarm-warning-fill" aria-hidden="true"></i>
+            <span>Urgencia 24H (Llamada)</span>
+          </button>
+          <button type="button" class="btn-pestana-proceso" id="tab-presupuesto" data-tab="presupuesto" role="tab"
+            aria-selected="false" aria-controls="panel-presupuesto">
+            <i class="ri-whatsapp-fill" aria-hidden="true"></i>
+            <span>Presupuesto / WhatsApp</span>
+          </button>
+        </div>
+
+        <!-- panel-proceso-urgencia -->
+        <div id="panel-urgencia" class="panel-proceso activo" role="tabpanel" aria-labelledby="tab-urgencia">
+          <div class="grid-pasos-proceso">
+
+            <!-- tarjeta-paso-1 -->
+            <article class="tarjeta-paso-proceso">
+              <span class="numero-paso">01</span>
+              <div class="icono-paso">
+                <i class="ri-phone-line" aria-hidden="true"></i>
+              </div>
+              <h3 class="h3-paso">Llamada directa 24H</h3>
+              <p class="texto-paso">Nos llamas al teléfono de contacto directo. Atención directa 24 horas para
+                emergencias de cerrajería a domicilio.</p>
+            </article>
+
+            <!-- tarjeta-paso-2 -->
+            <article class="tarjeta-paso-proceso">
+              <span class="numero-paso">02</span>
+              <div class="icono-paso">
+                <i class="ri-time-line" aria-hidden="true"></i>
+              </div>
+              <h3 class="h3-paso">Tiempo de llegada y precio orientativo</h3>
+              <p class="texto-paso">Te confirmamos el tiempo de llegada estimado (20–30 minutos con desplazamiento
+                incluido en Sevilla Capital) y un precio mínimo orientativo y transparente.</p>
+            </article>
+
+            <!-- tarjeta-paso-3 -->
+            <article class="tarjeta-paso-proceso">
+              <span class="numero-paso">03</span>
+              <div class="icono-paso">
+                <i class="ri-search-eye-line" aria-hidden="true"></i>
+              </div>
+              <h3 class="h3-paso">Diagnóstico inmediato in situ</h3>
+              <p class="texto-paso">El cerrajero acude a tu ubicación y realiza un diagnóstico inmediato in situ antes
+                de iniciar cualquier actuación.</p>
+            </article>
+
+            <!-- tarjeta-paso-4 -->
+            <article class="tarjeta-paso-proceso">
+              <span class="numero-paso">04</span>
+              <div class="icono-paso">
+                <i class="ri-shield-check-line" aria-hidden="true"></i>
+              </div>
+              <h3 class="h3-paso">Apertura sin daños y garantía</h3>
+              <p class="texto-paso">Apertura limpia sin destrozos con mano de obra especializada, asesoramiento en
+                seguridad residencial y garantía oficial en piezas instaladas.</p>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- panel-proceso-presupuesto -->
+        <div id="panel-presupuesto" class="panel-proceso" role="tabpanel" aria-labelledby="tab-presupuesto">
+          <div class="grid-pasos-proceso">
+
+            <!-- tarjeta-paso-1 -->
+            <article class="tarjeta-paso-proceso">
+              <span class="numero-paso">01</span>
+              <div class="icono-paso">
+                <i class="ri-chat-3-line" aria-hidden="true"></i>
+              </div>
+              <h3 class="h3-paso">Consulta por WhatsApp o formulario</h3>
+              <p class="texto-paso">Escríbenos por WhatsApp o déjanos tu consulta en el formulario web para presupuestos
+                sin urgencia o cambios de cerradura.</p>
+            </article>
+
+            <!-- tarjeta-paso-2 -->
+            <article class="tarjeta-paso-proceso">
+              <span class="numero-paso">02</span>
+              <div class="icono-paso">
+                <i class="ri-price-tag-3-line" aria-hidden="true"></i>
+              </div>
+              <h3 class="h3-paso">Precio mínimo orientativo</h3>
+              <p class="texto-paso">Evaluamos tu caso y te facilitamos un precio mínimo orientativo y transparente según
+                el tipo de puerta, vehículo o cerradura.</p>
+            </article>
+
+            <!-- tarjeta-paso-3 -->
+            <article class="tarjeta-paso-proceso">
+              <span class="numero-paso">03</span>
+              <div class="icono-paso">
+                <i class="ri-calendar-check-line" aria-hidden="true"></i>
+              </div>
+              <h3 class="h3-paso">Coordinación y diagnóstico in situ</h3>
+              <p class="texto-paso">Acordamos el momento de la visita y el cerrajero acude a tu domicilio para realizar
+                el diagnóstico inmediato in situ.</p>
+            </article>
+
+            <!-- tarjeta-paso-4 -->
+            <article class="tarjeta-paso-proceso">
+              <span class="numero-paso">04</span>
+              <div class="icono-paso">
+                <i class="ri-award-line" aria-hidden="true"></i>
+              </div>
+              <h3 class="h3-paso">Instalación y garantía oficial</h3>
+              <p class="texto-paso">Ejecutamos el servicio con mano de obra especializada, asesoramiento de seguridad y
+                garantía oficial en piezas instaladas.</p>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
+
+  <!-- ================= FOOTER ================= -->
+  <!-- pie-pagina -->
+  <footer class="pie-pagina">
+    <!-- contenido-pie-pagina -->
+    <div class="contenido-pie-pagina">
+
+      <!-- bloque-superior-pie -->
+      <div class="grid-pie-pagina">
+
+        <!-- columna-marca-pie -->
+        <div class="columna-pie-pagina columna-marca-pie">
+          <a href="index.html#inicio" class="enlace-logo-pie">
+            <img src="img/logo.png" alt="Logo de Apertura Express Sevilla" title="Apertura Express Sevilla"
+              class="logo-pie">
+          </a>
+          <p class="descripcion-pie-pagina">Cerrajero local en Sevilla especializado en urgencias 24 horas a domicilio.
+            Aperturas limpias sin daños, cambio de cerraduras de alta seguridad y precio cerrado antes de empezar.</p>
+          <div class="badge-tiempo-pie">
+            <i class="ri-time-line" aria-hidden="true"></i>
+            <span>Llegada estimada en <strong class="destacado">20–30 min</strong></span>
+          </div>
+        </div>
+
+        <!-- columna-navegacion-pie -->
+        <div class="columna-pie-pagina">
+          <h4 class="titulo-columna-pie">Navegación</h4>
+          <ul class="lista-enlaces-pie">
+            <li><a href="index.html#inicio" class="enlace-pie">Inicio</a></li>
+            <li><a href="index.html#servicios" class="enlace-pie">Servicios</a></li>
+            <li><a href="index.html#precios" class="enlace-pie">Tarifas y Precios</a></li>
+            <li><a href="index.html#cobertura" class="enlace-pie">Zona de cobertura</a></li>
+            <li><a href="index.html#sobre-nosotros" class="enlace-pie">¿Por qué elegirnos?</a></li>
+            <li><a href="index.html#faq" class="enlace-pie">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+
+        <!-- columna-servicios-pie -->
+        <div class="columna-pie-pagina">
+          <h4 class="titulo-columna-pie">Servicios 24H</h4>
+          <ul class="lista-enlaces-pie">
+            <li><a href="cerrajero-urgente.html" class="enlace-pie">Apertura de puertas sin daños</a></li>
+            <li><a href="cambio-cerraduras.html" class="enlace-pie">Cambio de cerraduras</a></li>
+            <li><a href="cerrajero-urgente.html" class="enlace-pie">Instalación de Puertas blindadas y acorazadas</a>
+            </li>
+            <li><a href="aperturas-coches.html" class="enlace-pie">Apertura de vehículos</a></li>
+            <li><a href="index.html#servicios" class="enlace-pie">Asesoramiento de seguridad</a></li>
+          </ul>
+        </div>
+
+        <!-- columna-contacto-pie -->
+        <div class="columna-pie-pagina">
+          <h4 class="titulo-columna-pie">Contacto Urgente</h4>
+          <div class="bloque-contacto-pie">
+            <a href="tel:+34600000000" class="boton-contacto-pie boton-telefono-pie">
+              <i class="ri-phone-fill" aria-hidden="true"></i>
+              <span>Llamar ahora</span>
+            </a>
+            <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer"
+              class="boton-contacto-pie boton-whatsapp-pie">
+              <i class="ri-whatsapp-line" aria-hidden="true"></i>
+              <span>WhatsApp Directo</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- barrita-inferior-pie -->
+      <div class="barrita-inferior-pie">
+        <div class="legales-pie">
+          <a href="aviso-legal.html" class="enlace-legal-pie">Aviso legal</a>
+          <span class="separador-pie">•</span>
+          <a href="politica-privacidad.html" class="enlace-legal-pie">Política de privacidad</a>
+          <span class="separador-pie">•</span>
+          <a href="politica-cookies.html" class="enlace-legal-pie">Política de cookies</a>
+        </div>
+        <p class="copyright-pie">© 2026 Apertura Express Sevilla. Todos los derechos reservados.</p>
+        <p class="creditos-pie">
+          Desarrollado por <a href="https://rubiqstudio.vercel.app/" target="_blank" rel="noopener noreferrer"
+            class="enlace-creditos-pie">RubiqStudio</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Botón Volver Arriba -->
+  <a href="#inicio" class="boton-volver-arriba" aria-label="Volver arriba">
+    <i class="ri-key-line" aria-hidden="true"></i>
+  </a>
+
+  <!-- Scripts JavaScript -->
+  <script src="JavaScript/main.js"></script>
+  <script src="JavaScript/contacto.js"></script>
+
 </body>
+
 </html>

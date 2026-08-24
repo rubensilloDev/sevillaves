@@ -776,10 +776,24 @@
 }
 
 /* =========================================
-   RESPONSIVE - MÓVIL
+   RESPONSIVE - TABLET (1024px) Y MÓVIL (764px)
 ========================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .hero-primer-div {
+    width: 85%;
+  }
+
+  .contenido-seccion-marcas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-como-funciona {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 764px) {
 
   /* Contenedor del contenido del hero: centrado en columna */
   .contenido-hero {
