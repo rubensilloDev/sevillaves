@@ -1,12 +1,12 @@
 /**
- * CUSTOM CHAT WIDGET - APERTURA EXPRESS SEVILLA
+ * CUSTOM CHAT WIDGET - SEVILLAVES
  * Script interactivo para el bot de preguntas frecuentes y respuestas automatizadas
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   // Configuración de las 3 preguntas sobre la empresa y sus respuestas scriptadas
   const chatData = {
-    initialMessage: "¡Hola! 👋 Soy el asistente virtual de Apertura Express Sevilla. ¿En qué podemos ayudarte hoy? Selecciona una de las siguientes opciones:",
+    initialMessage: "¡Hola! 👋 Soy el asistente virtual de Sevillaves. ¿En qué podemos ayudarte hoy? Selecciona una de las siguientes opciones:",
     options: [
       {
         id: "tiempo",
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="chat-status-dot"></span>
           </div>
           <div class="chat-header-text">
-            <span class="chat-header-title">Asistente Apertura Express</span>
+            <span class="chat-header-title">Asistente Sevillaves</span>
             <span class="chat-header-subtitle">En línea • Respuesta inmediata</span>
           </div>
         </div>

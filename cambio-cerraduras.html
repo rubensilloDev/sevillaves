@@ -14,7 +14,26 @@
     content="Cambio de cerraduras en Sevilla rápido y profesional. Instalación el mismo día, bombines de alta seguridad y presupuesto cerrado sin sorpresas. ¡Llama ya!">
   <!-- Meta title con la kw principal (cambio-cerraduras-sevilla) integrada sutilmente + hook comercial -->
   <title>Cambio de Cerraduras en Sevilla | Instalación el Mismo Día y Precio Cerrado</title>
+  <link rel="canonical" href="https://sevillave.vercel.app/cambio-cerraduras.html">
 
+  <!-- Metadatos Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Sevillaves">
+  <meta property="og:title" content="Cambio de Cerraduras en Sevilla | Instalación el Mismo Día y Precio Cerrado">
+  <meta property="og:description" content="Cambio de cerraduras en Sevilla rápido y profesional. Instalación el mismo día, bombines de alta seguridad y presupuesto cerrado sin sorpresas. ¡Llama ya!">
+  <meta property="og:url" content="https://sevillave.vercel.app/cambio-cerraduras.html">
+  <meta property="og:image" content="https://sevillave.vercel.app/img/img-cerrajero-cerradura.webp">
+
+  <!-- Metadatos Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cambio de Cerraduras en Sevilla | Instalación el Mismo Día y Precio Cerrado">
+  <meta name="twitter:description" content="Cambio de cerraduras en Sevilla rápido y profesional. Instalación el mismo día, bombines de alta seguridad y presupuesto cerrado sin sorpresas. ¡Llama ya!">
+  <meta name="twitter:image" content="https://sevillave.vercel.app/img/img-cerrajero-cerradura.webp">
+
+  <!-- Preconnect para CDNs externos -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <!-- Remix Icon: librería de iconos -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
   <!-- Estilos generales de la web -->
@@ -27,6 +46,192 @@
   <script src="JavaScript/main.js" defer></script>
   <!-- Script JS del widget de chat personalizado -->
   <script src="JavaScript/chat-widget.js" defer></script>
+  <!-- Librería GSAP y ScrollTrigger para animaciones -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="JavaScript/cambio-cerraduras-gsap.js" defer></script>
+
+  <!-- Datos Estructurados JSON-LD - LocalBusiness / Locksmith -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Locksmith",
+    "@id": "https://sevillave.vercel.app/#locksmith",
+    "name": "Sevillaves",
+    "alternateName": "Sevillaves",
+    "url": "https://sevillave.vercel.app/",
+    "logo": "https://sevillave.vercel.app/img/logo.png",
+    "image": [
+      "https://sevillave.vercel.app/img/cerrajero-hero.webp",
+      "https://sevillave.vercel.app/img/cerrajero-hero-2.webp",
+      "https://sevillave.vercel.app/img/img-cerrajero-coche.webp"
+    ],
+    "description": "Cerrajero local en Sevilla especializado en urgencias 24 horas a domicilio. Aperturas limpias sin daños, cambio de cerraduras de alta seguridad y precio cerrado antes de empezar.",
+    "telephone": "+34600000000",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Sierpes, 45",
+      "addressLocality": "Sevilla",
+      "postalCode": "41004",
+      "addressRegion": "Sevilla",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.389092,
+      "longitude": -5.998447
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Sevilla",
+        "sameAs": "https://es.wikipedia.org/wiki/Sevilla"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Casco Antiguo, Sevilla"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Triana, Sevilla"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Los Remedios, Sevilla"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Nervión, Sevilla"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Macarena, Sevilla"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Sevilla Este, Sevilla"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Santa Justa, Sevilla"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Bermejales, Sevilla"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Bellavista, Sevilla"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "San Bernardo, Sevilla"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Pino Montano, Sevilla"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "San Jerónimo, Sevilla"
+      },
+      {
+        "@type": "City",
+        "name": "Mairena del Aljarafe"
+      },
+      {
+        "@type": "City",
+        "name": "Dos Hermanas"
+      },
+      {
+        "@type": "City",
+        "name": "Alcalá de Guadaíra"
+      },
+      {
+        "@type": "City",
+        "name": "San Juan de Aznalfarache"
+      },
+      {
+        "@type": "City",
+        "name": "Tomares"
+      },
+      {
+        "@type": "City",
+        "name": "Camas"
+      },
+      {
+        "@type": "City",
+        "name": "Bormujos"
+      },
+      {
+        "@type": "City",
+        "name": "Castilleja de la Cuesta"
+      },
+      {
+        "@type": "City",
+        "name": "Gines"
+      },
+      {
+        "@type": "City",
+        "name": "La Rinconada"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios de Cerrajería Urgente",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Apertura de Puertas sin Daños",
+            "url": "https://sevillave.vercel.app/cerrajero-urgente.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Cambio de Cerraduras y Bombines",
+            "url": "https://sevillave.vercel.app/cambio-cerraduras.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Apertura de Vehículos y Coches",
+            "url": "https://sevillave.vercel.app/aperturas-coches.html"
+          }
+        }
+      ]
+    }
+  }
+  </script>
 </head>
 
 <body>
@@ -38,7 +243,7 @@
     <nav class="navegacion">
       <!-- logo-marca -->
       <a href="index.html#inicio" class="enlace-logo">
-        <img src="img/logo.png" alt="Logo de Apertura Express Sevilla" title="Apertura Express Sevilla" class="logo">
+        <img src="img/logo.png" alt="Logo de Sevillaves" title="Sevillaves" class="logo">
       </a>
 
       <!-- boton-hamburguesa-movil -->
@@ -52,7 +257,7 @@
       <ul class="menu-navegacion">
         <!-- logo-menu-movil -->
         <li class="item-menu-logo-movil">
-          <img src="img/logo.png" alt="Logo de Apertura Express Sevilla" class="logo-menu-movil">
+          <img src="img/logo.png" alt="Logo de Sevillaves" class="logo-menu-movil">
         </li>
 
         <li class="item-menu"><a href="index.html#inicio" class="enlace-menu">Inicio</a></li>
@@ -71,7 +276,7 @@
         </li>
 
         <li class="item-menu"><a href="index.html#sobre-nosotros" class="enlace-menu">Sobre Nosotros</a></li>
-        <li class="item-menu"><a href="index.html#contacto" class="enlace-menu">Contacto</a></li>
+        <li class="item-menu"><a href="contacto.html" class="enlace-menu">Contacto</a></li>
 
         <!-- boton-cta-menu-movil -->
         <li class="item-menu-cta-movil">
@@ -231,7 +436,7 @@
               <h3 class="h3-opcion">Básica</h3>
               <p class="texto-opcion">Cerradura estándar con material incluido. Adecuada para segundas residencias,
                 trasteros o puertas interiores sin necesidades especiales de seguridad.</p>
-              <a href="tel:+34600000000" class="boton-opcion">Contratar servicio <i class="ri-arrow-right-line"
+              <a href="tel:+34600000000" class="btn-naranja-tarjetas">Contratar servicio <i class="ri-arrow-right-line"
                   aria-hidden="true"></i></a>
             </article>
 
@@ -240,7 +445,7 @@
               <h3 class="h3-opcion">Seguridad media</h3>
               <p class="texto-opcion">Bombín reforzado con protección anti-bumping. La opción más elegida para viviendas
                 habituales que buscan un salto real en seguridad sin disparar el presupuesto.</p>
-              <a href="tel:+34600000000" class="boton-opcion">Contratar servicio <i class="ri-arrow-right-line"
+              <a href="tel:+34600000000" class="btn-naranja-tarjetas">Contratar servicio <i class="ri-arrow-right-line"
                   aria-hidden="true"></i></a>
             </article>
 
@@ -249,7 +454,7 @@
               <h3 class="h3-opcion">Alta seguridad</h3>
               <p class="texto-opcion">Cerradura de alta gama con máxima resistencia a taladro, bumping y ganzúa.
                 Recomendada para viviendas principales, bajos y puertas de acceso directo a la calle.</p>
-              <a href="tel:+34600000000" class="boton-opcion">Contratar servicio <i class="ri-arrow-right-line"
+              <a href="tel:+34600000000" class="btn-naranja-tarjetas">Contratar servicio <i class="ri-arrow-right-line"
                   aria-hidden="true"></i></a>
             </article>
 
@@ -682,8 +887,7 @@
             <!-- Casilla de términos -->
             <div class="casilla-terminos">
               <input type="checkbox" id="terminos-cta" name="terminos" class="checkbox-cta" required>
-              <label for="terminos-cta" class="texto-terminos-cta">Acepto los términos y condiciones de
-                privacidad</label>
+              <label for="terminos-cta" class="texto-terminos-cta">He leído y acepto la <a href="politica-privacidad.html" target="_blank" style="color: inherit; text-decoration: underline;">política de privacidad</a></label>
             </div>
 
             <!-- Botón de envío -->
@@ -710,7 +914,7 @@
         <!-- columna-marca-pie -->
         <div class="columna-pie-pagina columna-marca-pie">
           <a href="index.html#inicio" class="enlace-logo-pie">
-            <img src="img/logo.png" alt="Logo de Apertura Express Sevilla" title="Apertura Express Sevilla"
+            <img src="img/logo.png" alt="Logo de Sevillaves" title="Sevillaves"
               class="logo-pie">
           </a>
           <p class="descripcion-pie-pagina">Cerrajero local en Sevilla especializado en urgencias 24 horas a domicilio.
@@ -773,7 +977,7 @@
           <span class="separador-pie">•</span>
           <a href="politica-cookies.html" class="enlace-legal-pie">Política de cookies</a>
         </div>
-        <p class="copyright-pie">© 2026 Apertura Express Sevilla. Todos los derechos reservados.</p>
+        <p class="copyright-pie">© 2026 Sevillaves. Todos los derechos reservados.</p>
         <p class="creditos-pie">
           Desarrollado por <a href="https://rubiqstudio.vercel.app/" target="_blank" rel="noopener noreferrer"
             class="enlace-creditos-pie">RubiqStudio</a>

@@ -1186,7 +1186,7 @@
   }
 
   .h1-hero {
-    font-size: clamp(3rem, 6.5vw, 2.5rem);
+    font-size: clamp(3.3rem, 6.5vw, 2.5rem);
     line-height: 85%;
   }
 
