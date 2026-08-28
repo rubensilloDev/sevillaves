@@ -827,11 +827,12 @@
 
   .tarjetas-scroll-stack {
     gap: 24px;
+    margin: 2% 0;
   }
 
   .situacion-item {
     position: sticky;
-    top: 110px;
+    top: 10px;
     /* Se apila debajo de la cabecera fija de móvil */
     width: 100%;
     padding: 30px 24px;

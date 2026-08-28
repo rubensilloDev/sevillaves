@@ -1,0 +1,161 @@
+/* =========================================
+   PÁGINAS LEGALES (ESTILOS DEDICADOS)
+========================================= */
+
+/* Contenedor principal de páginas legales */
+.contenedor-legal {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 150px 6% 50px;
+}
+
+/* Tarjeta o bloque contenedor de contenido legal */
+.seccion-legal {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(19, 49, 92, 0.08);
+  border-radius: 16px;
+  padding: 3rem 3.5rem;
+  box-shadow: 0 10px 40px rgba(11, 31, 58, 0.04);
+}
+
+/* Título principal H1 legal */
+.titulo-legal {
+  font-family: var(--fuente-encabezados);
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 900;
+  color: var(--color-primario);
+  letter-spacing: -1.2px;
+  margin-bottom: 0.5rem;
+}
+
+/* Fecha de actualización en badge destacado */
+.fecha-actualizacion {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-accent);
+  background-color: rgba(240, 78, 35, 0.08);
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+/* Subencabezados H2 legales */
+.seccion-legal h2 {
+  font-family: var(--fuente-encabezados);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-primario);
+  margin-top: 2rem;
+  margin-bottom: 0.85rem;
+  padding-bottom: 6px;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid rgba(240, 78, 35, 0.15);
+}
+
+/* Párrafos legales */
+.seccion-legal p {
+  font-size: var(--tamano-texto-normal);
+  color: var(--color-texto-parrafo);
+  line-height: 1.75;
+  margin-bottom: 1.15rem;
+}
+
+/* Listas legales */
+.seccion-legal ul {
+  margin: 1rem 0 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.seccion-legal li {
+  color: var(--color-texto-parrafo);
+  font-size: var(--tamano-texto-normal);
+  line-height: 1.65;
+}
+
+/* Lista destacada de datos identificativos/responsable */
+.lista-datos-legales {
+  background-color: var(--color-fondo-cards);
+  border-left: 4px solid var(--color-accent);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 10px 10px 0;
+  list-style: none;
+  margin-left: 0 !important;
+  margin-bottom: 1.75rem !important;
+}
+
+.lista-datos-legales li {
+  color: var(--color-primario);
+}
+
+/* Tablas de cookies */
+.tabla-cookies {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(19, 49, 92, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.tabla-cookies th {
+  background-color: var(--color-primario);
+  color: #FFFFFF;
+  text-align: left;
+  padding: 14px 16px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.tabla-cookies td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(19, 49, 92, 0.08);
+  font-size: 14px;
+  color: var(--color-texto-parrafo);
+  line-height: 1.5;
+}
+
+.tabla-cookies tr:last-child td {
+  border-bottom: none;
+}
+
+.tabla-cookies tr:nth-child(even) {
+  background-color: rgba(245, 243, 246, 0.5);
+}
+
+/* Elementos de código inline */
+.seccion-legal code {
+  background-color: rgba(19, 49, 92, 0.06);
+  color: var(--color-primario);
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 13.5px;
+  font-family: monospace;
+}
+
+.seccion-legal strong {
+  color: var(--color-primario);
+  font-weight: 700;
+}
+
+/* Adaptación responsive para móvil */
+@media (max-width: 764px) {
+  .contenedor-legal {
+    padding: 110px 4% 50px;
+  }
+
+  .seccion-legal {
+    padding: 1.75rem 1.25rem;
+    border-radius: 12px;
+  }
+
+  .tabla-cookies {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

@@ -514,7 +514,8 @@ p {
   vertical-align: middle;
 }
 
-.item-menu-desplegable:hover .icono-desplegable {
+/* Estado abierto por clic */
+.item-menu-desplegable.abierto .icono-desplegable {
   transform: rotate(180deg);
   color: var(--color-accent);
 }
@@ -538,7 +539,7 @@ p {
   margin-top: 8px;
 }
 
-/* Área de tolerancia hover para evitar que se cierre al desplazar el cursor */
+/* Área de tolerancia hover para evitar que se cierre al desplazar el cursor en escritorio */
 .submenu-servicios::before {
   content: '';
   position: absolute;
@@ -548,10 +549,25 @@ p {
   height: 12px;
 }
 
-.item-menu-desplegable:hover .submenu-servicios {
+/* Estado abierto por clic */
+.item-menu-desplegable.abierto .submenu-servicios {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
+}
+
+/* Hover únicamente en versión escritorio (> 1024px) */
+@media (min-width: 1025px) {
+  .item-menu-desplegable:hover .icono-desplegable {
+    transform: rotate(180deg);
+    color: var(--color-accent);
+  }
+
+  .item-menu-desplegable:hover .submenu-servicios {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
 }
 
 .item-submenu {
@@ -1037,6 +1053,7 @@ p {
     max-height: 350px;
     margin-top: 8px;
     padding: 8px 0;
+    transform: none;
   }
 
   /* Rotación de la flecha al estar abierto el submenú en móvil */
@@ -1055,9 +1072,6 @@ p {
     padding-left: 20px;
   }
 
-  .item-menu-desplegable:hover .submenu-servicios {
-    transform: none;
-  }
 
   /* RESPONSIVE FOOTER MÓVIL */
   .pie-pagina {

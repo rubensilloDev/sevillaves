@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ================= CÓMO FUNCIONA =================
-  // Pasos secuenciales (izquierda): izquierda a derecha
-  gsap.from(".paso-item-fila", {
+  // Contenedor de pasos (izquierda): izquierda a derecha
+  gsap.from(".pasos-como-funciona", {
     scrollTrigger: {
       trigger: ".pasos-como-funciona",
       start: "top 80%"
@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     x: -50,
     opacity: 0,
     duration: 0.8,
-    stagger: 0.15,
     ease: "power2.out"
   });
 

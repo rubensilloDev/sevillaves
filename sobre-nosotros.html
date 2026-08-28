@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <!-- Favicons -->
@@ -9,204 +10,1125 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
   <link rel="manifest" href="img/favicon/site.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conoce más sobre Sevillaves, tu equipo de cerrajeros de confianza y rápidos 24 horas.">
-  <title>Sobre Nosotros | Sevillaves</title>
+  <meta name="description"
+    content="Conoce a Sevillaves: cerrajeros profesionales en Sevilla con +10 años de experiencia en urgencias 24h. Equipo de +15 técnicos, aperturas sin daños y precio cerrado.">
+  <title>Sobre Nosotros | Cerrajeros en Sevilla 24H con +10 Años de Experiencia | Sevillaves</title>
+  <link rel="canonical" href="https://sevillave.vercel.app/sobre-nosotros.html">
+
+  <!-- Metadatos Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Sevillaves">
+  <meta property="og:title"
+    content="Sobre Nosotros | Cerrajeros en Sevilla 24H con +10 Años de Experiencia | Sevillaves">
+  <meta property="og:description"
+    content="Conoce a Sevillaves: cerrajeros profesionales en Sevilla con +10 años de experiencia en urgencias 24h. Equipo de +15 técnicos, aperturas sin daños y precio cerrado.">
+  <meta property="og:url" content="https://sevillave.vercel.app/sobre-nosotros.html">
+  <meta property="og:image" content="https://sevillave.vercel.app/img/cerrajero-hero.webp">
+
+  <!-- Metadatos Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title"
+    content="Sobre Nosotros | Cerrajeros en Sevilla 24H con +10 Años de Experiencia | Sevillaves">
+  <meta name="twitter:description"
+    content="Conoce a Sevillaves: cerrajeros profesionales en Sevilla con +10 años de experiencia en urgencias 24h. Equipo de +15 técnicos, aperturas sin daños y precio cerrado.">
+  <meta name="twitter:image" content="https://sevillave.vercel.app/img/cerrajero-hero.webp">
+
   <!-- Preconnect para CDNs externos -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- Remix Icon: librería de iconos -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Estilos generales de la web -->
   <link rel="stylesheet" href="styles/styles.css">
+  <!-- Estilos específicos de la página Sobre Nosotros -->
+  <link rel="stylesheet" href="styles/sobre-nosotros.css">
   <!-- Estilos del widget de chat personalizado -->
   <link rel="stylesheet" href="styles/chat-widget.css">
+
+  <!-- Script JS sencillo para el menú responsive -->
   <script src="JavaScript/main.js" defer></script>
   <!-- Script JS del widget de chat personalizado -->
   <script src="JavaScript/chat-widget.js" defer></script>
-  <!-- Datos Estructurados JSON-LD - LocalBusiness / Locksmith -->
+  <!-- Librería GSAP y ScrollTrigger para animaciones -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="JavaScript/sobre-nosotros-gsap.js" defer></script>
+
+  <!-- Datos Estructurados JSON-LD - AboutPage / Locksmith -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Locksmith",
-    "@id": "https://sevillave.vercel.app/#locksmith",
-    "name": "Sevillaves",
-    "alternateName": "Sevillaves",
-    "url": "https://sevillave.vercel.app/",
-    "logo": "https://sevillave.vercel.app/img/logo.png",
-    "image": [
-      "https://sevillave.vercel.app/img/cerrajero-hero.webp",
-      "https://sevillave.vercel.app/img/cerrajero-hero-2.webp",
-      "https://sevillave.vercel.app/img/img-cerrajero-coche.webp"
-    ],
-    "description": "Cerrajero local en Sevilla especializado en urgencias 24 horas a domicilio. Aperturas limpias sin daños, cambio de cerraduras de alta seguridad y precio cerrado antes de empezar.",
-    "telephone": "+34600000000",
-    "priceRange": "€€",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Calle Sierpes, 45",
-      "addressLocality": "Sevilla",
-      "postalCode": "41004",
-      "addressRegion": "Sevilla",
-      "addressCountry": "ES"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 37.389092,
-      "longitude": -5.998447
-    },
-    "openingHoursSpecification": [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
+        "@type": "AboutPage",
+        "@id": "https://sevillave.vercel.app/sobre-nosotros.html#webpage",
+        "url": "https://sevillave.vercel.app/sobre-nosotros.html",
+        "name": "Sobre Nosotros | Cerrajeros en Sevilla 24H con +10 Años de Experiencia",
+        "description": "Conoce la historia, el equipo y el compromiso de calidad de Sevillaves, empresa de cerrajería de urgencia 24 horas en Sevilla con más de una década de experiencia.",
+        "isPartOf": {
+          "@id": "https://sevillave.vercel.app/#website"
+        },
+        "about": {
+          "@id": "https://sevillave.vercel.app/#locksmith"
+        },
+        "inLanguage": "es-ES"
+      },
+      {
+        "@type": "Locksmith",
+        "@id": "https://sevillave.vercel.app/#locksmith",
+        "name": "Sevillaves",
+        "alternateName": "Cerrajero Express Sevilla",
+        "url": "https://sevillave.vercel.app/",
+        "logo": "https://sevillave.vercel.app/img/logo.png",
+        "image": [
+          "https://sevillave.vercel.app/img/cerrajero-hero.webp",
+          "https://sevillave.vercel.app/img/cerrajero-hero-2.webp",
+          "https://sevillave.vercel.app/img/cerrajero-y-furgoneta.webp"
         ],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
-    ],
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Sevilla",
-        "sameAs": "https://es.wikipedia.org/wiki/Sevilla"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Casco Antiguo, Sevilla"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Triana, Sevilla"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Los Remedios, Sevilla"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Nervión, Sevilla"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Macarena, Sevilla"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Sevilla Este, Sevilla"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Santa Justa, Sevilla"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Bermejales, Sevilla"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Bellavista, Sevilla"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "San Bernardo, Sevilla"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Pino Montano, Sevilla"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "San Jerónimo, Sevilla"
-      },
-      {
-        "@type": "City",
-        "name": "Mairena del Aljarafe"
-      },
-      {
-        "@type": "City",
-        "name": "Dos Hermanas"
-      },
-      {
-        "@type": "City",
-        "name": "Alcalá de Guadaíra"
-      },
-      {
-        "@type": "City",
-        "name": "San Juan de Aznalfarache"
-      },
-      {
-        "@type": "City",
-        "name": "Tomares"
-      },
-      {
-        "@type": "City",
-        "name": "Camas"
-      },
-      {
-        "@type": "City",
-        "name": "Bormujos"
-      },
-      {
-        "@type": "City",
-        "name": "Castilleja de la Cuesta"
-      },
-      {
-        "@type": "City",
-        "name": "Gines"
-      },
-      {
-        "@type": "City",
-        "name": "La Rinconada"
-      }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "127",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Servicios de Cerrajería Urgente",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Apertura de Puertas sin Daños",
-            "url": "https://sevillave.vercel.app/cerrajero-urgente.html"
-          }
+        "description": "Cerrajería profesional en Sevilla para urgencias, aperturas, cambios de cerradura y sistemas de seguridad. Llegamos rápido, trabajamos sin dañar la puerta y con precio cerrado.",
+        "telephone": "+34600000000",
+        "priceRange": "€€",
+        "foundingDate": "2012",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle San Luis, 148",
+          "addressLocality": "Sevilla",
+          "postalCode": "41003",
+          "addressRegion": "Sevilla",
+          "addressCountry": "ES"
         },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Cambio de Cerraduras y Bombines",
-            "url": "https://sevillave.vercel.app/cambio-cerraduras.html"
-          }
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 37.389092,
+          "longitude": -5.998447
         },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Apertura de Vehículos y Coches",
-            "url": "https://sevillave.vercel.app/aperturas-coches.html"
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
           }
+        ],
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Sevilla",
+            "sameAs": "https://es.wikipedia.org/wiki/Sevilla"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Triana, Sevilla"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Nervión, Sevilla"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Los Remedios, Sevilla"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Macarena, Sevilla"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Sevilla Este, Sevilla"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "San Pablo-Santa Justa, Sevilla"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Centro, Sevilla"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Cerro-Amate, Sevilla"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Sur, Sevilla"
+          },
+          {
+            "@type": "City",
+            "name": "Mairena del Aljarafe"
+          },
+          {
+            "@type": "City",
+            "name": "Dos Hermanas"
+          },
+          {
+            "@type": "City",
+            "name": "Alcalá de Guadaíra"
+          },
+          {
+            "@type": "City",
+            "name": "San Juan de Aznalfarache"
+          },
+          {
+            "@type": "City",
+            "name": "Tomares"
+          },
+          {
+            "@type": "City",
+            "name": "Camas"
+          },
+          {
+            "@type": "City",
+            "name": "Bormujos"
+          },
+          {
+            "@type": "City",
+            "name": "Castilleja de la Cuesta"
+          },
+          {
+            "@type": "City",
+            "name": "Gines"
+          },
+          {
+            "@type": "City",
+            "name": "La Rinconada"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "327",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios de Cerrajería",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Cerrajería de Urgencia 24h",
+                "url": "https://sevillave.vercel.app/cerrajero-urgente.html"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Apertura de Puertas sin Daños",
+                "url": "https://sevillave.vercel.app/cerrajero-urgente.html"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Cambio y Reparación de Cerraduras",
+                "url": "https://sevillave.vercel.app/cambio-cerraduras.html"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Cerraduras de Alta Seguridad",
+                "url": "https://sevillave.vercel.app/cambio-cerraduras.html"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Instalación de Puertas Blindadas y Acorazadas",
+                "url": "https://sevillave.vercel.app/cerrajero-urgente.html"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Cerrajería de Vehículos",
+                "url": "https://sevillave.vercel.app/aperturas-coches.html"
+              }
+            }
+          ]
         }
-      ]
-    }
+      }
+    ]
   }
   </script>
 </head>
+
 <body>
-  <main style="padding: 100px 20px; text-align: center; font-family: sans-serif;">
-    <h1 style="font-size: 2.5rem; margin-bottom: 20px;">Sobre Nosotros</h1>
-    <p style="font-size: 1.2rem; color: #666; margin-bottom: 30px;">Página en construcción. Estamos preparando esta sección para vos.</p>
-    <a href="index.html" class="boton-principal" style="text-decoration: none; padding: 12px 24px; border-radius: 6px; background-color: #0056b3; color: white; display: inline-block;">Volver al Inicio</a>
+
+  <!-- ================= HEADER / NAVEGACIÓN ================= -->
+  <header class="cabecera">
+    <nav class="navegacion">
+      <!-- Logo de la marca: imagen del logo con enlace al inicio -->
+      <a href="index.html#inicio" class="enlace-logo">
+        <img src="img/logo.png" alt="Logo de Sevillaves" title="Sevillaves" class="logo">
+      </a>
+
+      <!-- Botón menú hamburguesa con 3 divs para animación sutil -->
+      <button class="boton-hamburguesa" id="btn-menu" aria-label="Abrir menú de navegación">
+        <div class="linea-hamburguesa"></div>
+        <div class="linea-hamburguesa"></div>
+        <div class="linea-hamburguesa"></div>
+      </button>
+
+      <!-- Menú de navegación principal -->
+      <ul class="menu-navegacion">
+        <!-- Logo dentro del menú a pantalla completa para versión móvil -->
+        <li class="item-menu-logo-movil">
+          <img src="img/logo.png" alt="Logo de Sevillaves" class="logo-menu-movil">
+        </li>
+
+        <li class="item-menu"><a href="index.html#inicio" class="enlace-menu">Inicio</a></li>
+
+        <!-- Ítem Servicios con desplegable de los servicios principales -->
+        <li class="item-menu item-menu-desplegable">
+          <a href="javascript:void(0)" class="enlace-menu">Servicios <i class="ri-arrow-down-s-line icono-desplegable"
+              aria-hidden="true"></i></a>
+          <ul class="submenu-servicios">
+            <li class="item-submenu"><a href="cerrajero-urgente.html" class="enlace-submenu">Cerrajero Urgente en
+                Sevilla</a></li>
+            <li class="item-submenu"><a href="cambio-cerraduras.html" class="enlace-submenu">Cambio de Cerraduras</a>
+            </li>
+            <li class="item-submenu"><a href="aperturas-coches.html" class="enlace-submenu">Aperturas de Coches</a></li>
+          </ul>
+        </li>
+
+        <li class="item-menu"><a href="sobre-nosotros.html" class="enlace-menu">Sobre Nosotros</a></li>
+        <li class="item-menu"><a href="contacto.html" class="enlace-menu">Contacto</a></li>
+
+        <!-- Botón CTA dentro del menú a pantalla completa para versión móvil -->
+        <li class="item-menu-cta-movil">
+          <a href="tel:+34600000000" class="boton-principal boton-cta-menu-movil"><i class="ri-phone-line"
+              aria-hidden="true"></i> Llamar ahora</a>
+        </li>
+      </ul>
+
+      <!-- Botón CTA en cabecera de escritorio -->
+      <a href="tel:+34600000000" class="boton-llamar-cabecera">Llamar ahora</a>
+    </nav>
+  </header>
+
+  <main class="main-sobre-nosotros">
+
+    <!-- Destellos ornamentales flotantes a nivel de página (sin cortes entre secciones) -->
+    <div class="destello-naranja destello-flotante-1"></div>
+    <div class="destello-naranja destello-flotante-2"></div>
+    <div class="destello-naranja destello-flotante-3"></div>
+    <div class="destello-naranja destello-flotante-4"></div>
+    <div class="destello-naranja destello-flotante-5"></div>
+
+    <!-- ================= HERO ================= -->
+    <section id="inicio" class="hero">
+      <!-- Capa decorativa con degradado -->
+      <div class="capa-degradado-hero"></div>
+
+      <!-- Contenedor del contenido del hero -->
+      <div class="contenido-hero">
+
+        <!-- Bloque superior del hero: Título y botones de llamada/WhatsApp -->
+        <div class="hero-primer-div">
+          <h1 class="h1-hero">Cerrajeros en <span class="destacado">Sevilla</span> con <span class="destacado">+10 años
+              de experiencia</span> en urgencias 24h</h1>
+          <div class="acciones-hero">
+            <a href="tel:+34600000000" class="boton-principal"><i class="ri-phone-line" aria-hidden="true"></i> Llamar
+              ahora</a>
+            <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" class="boton-secundario"><i
+                class="ri-whatsapp-line" aria-hidden="true"></i> WhatsApp 24h</a>
+          </div>
+        </div>
+
+        <!-- Bloque inferior del hero: Propuesta de valor descriptiva -->
+        <div class="hero-segundo-div">
+          <p class="texto-hero">Cerrajería profesional en Sevilla para urgencias, aperturas, cambios de cerradura y
+            sistemas de seguridad. Llegamos rápido, trabajamos sin dañar la puerta siempre que sea posible y te
+            informamos del precio antes de intervenir.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= HISTORIA Y TRAYECTORIA LOCAL ================= -->
+    <section class="seccion-historia">
+
+      <div class="contenido-historia">
+
+        <!-- Columna izquierda: Narrativa histórica y presencia en Sevilla -->
+        <div class="historia-textos">
+          <h2 class="titulo-historia">Cerrajería local en Sevilla, preparada para cualquier situación</h2>
+          <p class="parrafo-historia-destacado">Empezamos atendiendo urgencias en Triana y hoy cubrimos toda Sevilla
+            Capital y alrededores. Desde 2012, ayudamos a particulares y negocios con todo tipo de trabajos de
+            cerrajería, aunque nuestra especialidad principal son las urgencias 24 horas.</p>
+          <p class="parrafo-historia">Somos un equipo de <strong>+15 técnicos</strong> preparados para actuar ante
+            pérdidas de llaves, puertas bloqueadas, cerraduras averiadas y otros problemas de acceso.</p>
+          <p class="parrafo-historia">Además de las urgencias, realizamos cambios y reparaciones de cerraduras,
+            instalación de sistemas de seguridad y trabajos de cerrajería para viviendas, negocios y vehículos.</p>
+        </div>
+
+        <!-- Columna derecha: Imagen representativa y grid de métricas -->
+        <div class="historia-visual">
+          <img src="img/cerrajero-y-furgoneta.webp" alt="Equipo de cerrajeros en Sevilla con furgoneta taller móvil"
+            title="Cerrajeros locales en Sevilla" class="imagen-historia">
+
+          <div class="metricas-historia-grid">
+            <article class="tarjeta-metrica">
+              <span class="cifra-metrica">+15</span>
+              <span class="etiqueta-metrica">Técnicos preparados para urgencias</span>
+            </article>
+            <article class="tarjeta-metrica">
+              <span class="cifra-metrica">2012</span>
+              <span class="etiqueta-metrica">Atendiendo a hogares y negocios</span>
+            </article>
+            <article class="tarjeta-metrica">
+              <span class="cifra-metrica">20–30'</span>
+              <span class="etiqueta-metrica">Tiempo medio de llegada a tu puerta</span>
+            </article>
+            <article class="tarjeta-metrica">
+              <span class="cifra-metrica">100%</span>
+              <span class="etiqueta-metrica">Presupuesto cerrado previo al trabajo</span>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= NUESTROS SERVICIOS DE CERRAJERÍA ================= -->
+    <section class="seccion-servicios-resumen">
+
+      <div class="contenido-servicios-resumen">
+
+        <!-- Encabezado de la sección de servicios -->
+        <div class="encabezado-servicios-resumen">
+          <h2 class="titulo-servicios-resumen">Nuestros servicios de cerrajería</h2>
+          <p class="bajada-servicios-resumen">Soluciones rápidas, eficaces y con materiales de máxima calidad para
+            cualquier necesidad de acceso o seguridad.</p>
+        </div>
+
+        <!-- Grid Bento Asimétrico con las 6 tarjetas de servicios -->
+        <div class="grid-servicios-resumen">
+
+          <!-- Servicio 1: Cerrajería de urgencia 24h (Bento Ancha con Imagen) -->
+          <article class="tarjeta-servicio-resumen tarjeta-servicio-bento-2col">
+            <div class="icono-servicio-box" aria-hidden="true">
+              <i class="ri-alarm-warning-line"></i>
+            </div>
+            <div class="servicio-bento-contenido">
+              <div class="servicio-info-textos">
+                <h3 class="titulo-servicio-item">Cerrajería de urgencia 24h</h3>
+                <p class="descripcion-servicio-item">Atendemos cualquier problema de acceso en Sevilla Capital y área
+                  metropolitana durante las 24 horas, los 365 días del año. Llegada récord de 20 a 30 minutos.</p>
+                <a href="cerrajero-urgente.html" class="btn-naranja-tarjetas">Ver servicio urgente <i
+                    class="ri-arrow-right-line" aria-hidden="true"></i></a>
+              </div>
+              <div class="servicio-bento-imagen-box">
+                <img src="img/cerrajero-y-furgoneta.webp" alt="Equipo de cerrajeros de urgencia 24 horas en Sevilla"
+                  class="imagen-servicio-bento" loading="lazy">
+              </div>
+            </div>
+          </article>
+
+          <!-- Servicio 2: Apertura de puertas (Tarjeta Compacta) -->
+          <article class="tarjeta-servicio-resumen">
+            <div class="icono-servicio-box" aria-hidden="true">
+              <i class="ri-key-2-line"></i>
+            </div>
+            <div class="servicio-info-textos">
+              <h3 class="titulo-servicio-item">Apertura de puertas</h3>
+              <p class="descripcion-servicio-item">Abrimos puertas de viviendas, locales comerciales e interiores
+                utilizando técnicas limpias para evitar daños en la cerradura y en la estructura.</p>
+              <a href="cerrajero-urgente.html" class="btn-naranja-tarjetas">Apertura de puertas <i
+                  class="ri-arrow-right-line" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- Servicio 3: Cambio y reparación de cerraduras (Tarjeta Compacta) -->
+          <article class="tarjeta-servicio-resumen">
+            <div class="icono-servicio-box" aria-hidden="true">
+              <i class="ri-lock-unlock-line"></i>
+            </div>
+            <div class="servicio-info-textos">
+              <h3 class="titulo-servicio-item">Cambio y reparación de cerraduras</h3>
+              <p class="descripcion-servicio-item">Sustituimos bombines averiados o desgastados por cilindros nuevos
+                garantizados, adaptados a la medida y necesidades de tu puerta.</p>
+              <a href="cambio-cerraduras.html" class="btn-naranja-tarjetas">Cambio de bombines <i
+                  class="ri-arrow-right-line" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- Servicio 4: Cerraduras de alta seguridad (Bento Ancha con Imagen) -->
+          <article class="tarjeta-servicio-resumen tarjeta-servicio-bento-2col">
+            <div class="icono-servicio-box" aria-hidden="true">
+              <i class="ri-shield-keyhole-line"></i>
+            </div>
+            <div class="servicio-bento-contenido">
+              <div class="servicio-info-textos">
+                <h3 class="titulo-servicio-item">Cerraduras de alta seguridad</h3>
+                <p class="descripcion-servicio-item">Instalamos bombines antibumping, antiganzúa y antitaladro con
+                  escudos protectores acorazados para blindar tu vivienda contra intrusiones.</p>
+                <a href="cambio-cerraduras.html" class="btn-naranja-tarjetas">Alta seguridad <i
+                    class="ri-arrow-right-line" aria-hidden="true"></i></a>
+              </div>
+              <div class="servicio-bento-imagen-box">
+                <img src="img/collage-tipos-cerraduras.webp" alt="Cerraduras y bombines de alta seguridad antibumping"
+                  class="imagen-servicio-bento" loading="lazy">
+              </div>
+            </div>
+          </article>
+
+          <!-- Servicio 5: Instalación de Puertas blindadas y acorazadas (Bento Ancha con Imagen) -->
+          <article class="tarjeta-servicio-resumen tarjeta-servicio-bento-2col">
+            <div class="icono-servicio-box" aria-hidden="true">
+              <i class="ri-door-closed-line"></i>
+            </div>
+            <div class="servicio-bento-contenido">
+              <div class="servicio-info-textos">
+                <h3 class="titulo-servicio-item">Puertas blindadas y acorazadas</h3>
+                <p class="descripcion-servicio-item">Mantenimiento, ajuste e instalación de mecanismos de cierre
+                  multipunto de máxima resistencia en accesos blindados y acorazados.</p>
+                <a href="cambio-cerraduras.html" class="btn-naranja-tarjetas">Puertas blindadas <i
+                    class="ri-arrow-right-line" aria-hidden="true"></i></a>
+              </div>
+              <div class="servicio-bento-imagen-box">
+                <img src="img/img-cerrajero-puerta.webp" alt="Ajuste e instalación de puertas blindadas y acorazadas"
+                  class="imagen-servicio-bento" loading="lazy">
+              </div>
+            </div>
+          </article>
+
+          <!-- Servicio 6: Cerrajería de vehículos (Tarjeta Compacta) -->
+          <article class="tarjeta-servicio-resumen">
+            <div class="icono-servicio-box" aria-hidden="true">
+              <i class="ri-car-line"></i>
+            </div>
+            <div class="servicio-info-textos">
+              <h3 class="titulo-servicio-item">Apertura de vehículos</h3>
+              <p class="descripcion-servicio-item">Apertura técnica y no destructiva de vehículos en Sevilla cuando las
+                llaves han quedado olvidadas dentro del habitáculo o maletero.</p>
+              <a href="aperturas-coches.html" class="btn-naranja-tarjetas">Apertura de coches <i
+                  class="ri-arrow-right-line" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= MÁS DE UNA DÉCADA DE EXPERIENCIA ================= -->
+    <section class="seccion-experiencia">
+
+      <div class="contenido-experiencia">
+
+        <!-- Encabezado de experiencia -->
+        <div class="encabezado-experiencia">
+          <h2 class="titulo-experiencia">Más de una década resolviendo problemas de cerrajería en Sevilla</h2>
+        </div>
+
+        <!-- Grid de los 3 pilares de experiencia -->
+        <div class="grid-experiencia">
+
+          <!-- Pilar 1: +14 años de experiencia -->
+          <article class="tarjeta-experiencia">
+            <div class="icono-experiencia">
+              <i class="ri-medal-line" aria-hidden="true"></i>
+            </div>
+            <h3 class="titulo-experiencia-item">+14 años de experiencia</h3>
+            <p class="descripcion-experiencia-item">Desde 2012, hemos atendido miles de servicios de cerrajería en
+              Sevilla Capital y sus alrededores.</p>
+          </article>
+
+          <!-- Pilar 2: Especialistas en puertas blindadas y acorazadas -->
+          <article class="tarjeta-experiencia">
+            <div class="icono-experiencia">
+              <i class="ri-shield-check-line" aria-hidden="true"></i>
+            </div>
+            <h3 class="titulo-experiencia-item">Especialistas en puertas blindadas y acorazadas</h3>
+            <p class="descripcion-experiencia-item">Contamos con herramientas y conocimientos específicos para trabajar
+              con sistemas de cierre de mayor seguridad.</p>
+          </article>
+
+          <!-- Pilar 3: Formación continua -->
+          <article class="tarjeta-experiencia">
+            <div class="icono-experiencia">
+              <i class="ri-book-open-line" aria-hidden="true"></i>
+            </div>
+            <h3 class="titulo-experiencia-item">Formación continua</h3>
+            <p class="descripcion-experiencia-item">Nos mantenemos actualizados en nuevos sistemas de cierre, cerraduras
+              de alta seguridad, llaves de proximidad y soluciones electrónicas.</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- ================= LO QUE DICEN NUESTROS CLIENTES ================= -->
+    <section class="seccion-testimonios">
+
+      <div class="contenido-testimonios">
+
+        <!-- Encabezado y widget Google -->
+        <div class="encabezado-testimonios">
+          <h2 class="titulo-testimonios">Lo que dicen nuestros clientes en Google</h2>
+
+          <!-- Widget centralizado de puntuación de Google -->
+          <div class="tarjeta-google-score">
+            <div class="puntuacion-google">
+              <i class="ri-star-fill icono-estrella-oro" aria-hidden="true"></i>
+              <span>4,9 ★</span>
+            </div>
+            <span class="texto-google-score">Valoración media basada en 327 reseñas</span>
+          </div>
+
+          <h3 class="subtitulo-resenas">Reseñas recientes de clientes en Sevilla</h3>
+        </div>
+
+        <!-- Contenedor del Carrusel Infinito con sombras difuminadas a los lados -->
+        <div class="contenedor-carrusel-testimonios">
+          <!-- Sombra difuminada blanca izquierda -->
+          <div class="sombra-carrusel-izquierda"></div>
+          <!-- Sombra difuminada blanca derecha -->
+          <div class="sombra-carrusel-derecha"></div>
+
+          <!-- Pista con las tarjetas en loop infinito continuo -->
+          <div class="pista-carrusel-testimonios">
+
+            <!-- Bloque 1 de Reseñas -->
+            <!-- Testimonio 1: Carlos M. -->
+            <article class="tarjeta-testimonio">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Carlos M.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Triana,
+                    Sevilla</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio" aria-label="Valoración: 5 de 5 estrellas">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Me quedé fuera de casa por la noche y en menos de media hora ya
+                estaban aquí. La apertura fue rápida y no dañaron la puerta.”</blockquote>
+            </article>
+
+            <!-- Testimonio 2: Laura G. -->
+            <article class="tarjeta-testimonio">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Laura G.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Nervión,
+                    Sevilla</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio" aria-label="Valoración: 5 de 5 estrellas">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Muy profesionales y rápidos. Me explicaron el precio antes de empezar
+                y no tuve ninguna sorpresa.”</blockquote>
+            </article>
+
+            <!-- Testimonio 3: Antonio R. -->
+            <article class="tarjeta-testimonio">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Antonio R.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Los Remedios,
+                    Sevilla</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio" aria-label="Valoración: 5 de 5 estrellas">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Tuve un problema con la cerradura de la puerta blindada. El técnico
+                consiguió solucionarlo sin tener que cambiarla.”</blockquote>
+            </article>
+
+            <!-- Testimonio 4: Marta P. -->
+            <article class="tarjeta-testimonio">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Marta P.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Sevilla
+                    Este</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio" aria-label="Valoración: 5 de 5 estrellas">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Servicio de urgencia muy bueno. Llegaron incluso antes de lo que me
+                habían indicado.”</blockquote>
+            </article>
+
+            <!-- Testimonio 5: Javier S. -->
+            <article class="tarjeta-testimonio">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Javier S.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Macarena,
+                    Sevilla</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio" aria-label="Valoración: 5 de 5 estrellas">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Cambiaron el bombín por uno antibumping de alta seguridad en 20
+                minutos. Trato inmejorable y precio super razonable.”</blockquote>
+            </article>
+
+            <!-- Testimonio 6: Rocío D. -->
+            <article class="tarjeta-testimonio">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Rocío D.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Mairena del
+                    Aljarafe</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio" aria-label="Valoración: 5 de 5 estrellas">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Se me quedaron las llaves dentro del coche en el parking. Llegaron
+                rápido y abrieron la puerta sin un solo rasguño.”</blockquote>
+            </article>
+
+            <!-- Testimonio 7: Manuel B. -->
+            <article class="tarjeta-testimonio">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Manuel B.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Centro,
+                    Sevilla</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio" aria-label="Valoración: 5 de 5 estrellas">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Da gusto encontrar profesionales honrados. Diagnóstico claro, sin
+                rodeos y factura con garantía oficial. 100% recomendados.”</blockquote>
+            </article>
+
+            <!-- Testimonio 8: Carmen V. -->
+            <article class="tarjeta-testimonio">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Carmen V.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Dos
+                    Hermanas</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio" aria-label="Valoración: 5 de 5 estrellas">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Llegaron en festivo a las 11 de la noche en menos de 25 minutos. Me
+                salvaron la noche, trabajo impecable.”</blockquote>
+            </article>
+
+            <!-- Bloque 2 DUPLICADO para Loop Infinito Continuo -->
+            <!-- Testimonio 1 duplicado -->
+            <article class="tarjeta-testimonio" aria-hidden="true">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Carlos M.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Triana,
+                    Sevilla</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Me quedé fuera de casa por la noche y en menos de media hora ya
+                estaban aquí. La apertura fue rápida y no dañaron la puerta.”</blockquote>
+            </article>
+
+            <!-- Testimonio 2 duplicado -->
+            <article class="tarjeta-testimonio" aria-hidden="true">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Laura G.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Nervión,
+                    Sevilla</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Muy profesionales y rápidos. Me explicaron el precio antes de empezar
+                y no tuve ninguna sorpresa.”</blockquote>
+            </article>
+
+            <!-- Testimonio 3 duplicado -->
+            <article class="tarjeta-testimonio" aria-hidden="true">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Antonio R.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Los Remedios,
+                    Sevilla</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Tuve un problema con la cerradura de la puerta blindada. El técnico
+                consiguió solucionarlo sin tener que cambiarla.”</blockquote>
+            </article>
+
+            <!-- Testimonio 4 duplicado -->
+            <article class="tarjeta-testimonio" aria-hidden="true">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Marta P.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Sevilla
+                    Este</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Servicio de urgencia muy bueno. Llegaron incluso antes de lo que me
+                habían indicado.”</blockquote>
+            </article>
+
+            <!-- Testimonio 5 duplicado -->
+            <article class="tarjeta-testimonio" aria-hidden="true">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Javier S.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Macarena,
+                    Sevilla</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Cambiaron el bombín por uno antibumping de alta seguridad en 20
+                minutos. Trato inmejorable y precio super razonable.”</blockquote>
+            </article>
+
+            <!-- Testimonio 6 duplicado -->
+            <article class="tarjeta-testimonio" aria-hidden="true">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Rocío D.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Mairena del
+                    Aljarafe</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Se me quedaron las llaves dentro del coche en el parking. Llegaron
+                rápido y abrieron la puerta sin un solo rasguño.”</blockquote>
+            </article>
+
+            <!-- Testimonio 7 duplicado -->
+            <article class="tarjeta-testimonio" aria-hidden="true">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Manuel B.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Centro,
+                    Sevilla</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Da gusto encontrar profesionales honrados. Diagnóstico claro, sin
+                rodeos y factura con garantía oficial. 100% recomendados.”</blockquote>
+            </article>
+
+            <!-- Testimonio 8 duplicado -->
+            <article class="tarjeta-testimonio" aria-hidden="true">
+              <div class="cabecera-testimonio">
+                <div class="info-cliente-testimonio">
+                  <h4 class="nombre-cliente-testimonio">Carmen V.</h4>
+                  <span class="zona-cliente-testimonio"><i class="ri-map-pin-line" aria-hidden="true"></i> Dos
+                    Hermanas</span>
+                </div>
+              </div>
+              <div class="estrellas-testimonio">
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="cita-testimonio">“Llegaron en festivo a las 11 de la noche en menos de 25 minutos. Me
+                salvaron la noche, trabajo impecable.”</blockquote>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= DÓNDE ENCONTRARNOS: SEVILLA Y ALREDEDORES ================= -->
+    <section class="seccion-cobertura-local">
+
+      <div class="contenido-cobertura-local">
+
+        <!-- Encabezado de cobertura -->
+        <div class="encabezado-cobertura-local">
+          <h2 class="titulo-cobertura-local">Dónde encontrarnos: Sevilla Capital y alrededores</h2>
+          <p class="bajada-cobertura-local">Atendemos Sevilla Capital y su área metropolitana, con desplazamiento
+            incluido en el precio.</p>
+        </div>
+
+        <!-- Grid de dos tarjetas estructuradas: Capital vs Metropolitana -->
+        <div class="grid-tarjetas-cobertura">
+
+          <!-- Tarjeta 1: Sevilla Capital -->
+          <article class="tarjeta-zona-cobertura-item">
+            <div class="cabecera-tarjeta-zona">
+              <h3 class="titulo-zona-card"><i class="ri-map-pin-user-line" aria-hidden="true"></i> Sevilla Capital</h3>
+              <span class="badge-tiempo-zona"><i class="ri-time-line" aria-hidden="true"></i> 20–30 min</span>
+            </div>
+            <p class="texto-detalle-zonas">Desplazamiento incluido en todos los distritos y barrios de la capital
+              sevillana:</p>
+            <div class="contenedor-etiquetas-zonas">
+              <span class="etiqueta-zona-item">Triana</span>
+              <span class="etiqueta-zona-item">Nervión</span>
+              <span class="etiqueta-zona-item">Los Remedios</span>
+              <span class="etiqueta-zona-item">Macarena</span>
+              <span class="etiqueta-zona-item">Sevilla Este</span>
+              <span class="etiqueta-zona-item">San Pablo-Santa Justa</span>
+              <span class="etiqueta-zona-item">Centro</span>
+              <span class="etiqueta-zona-item">Cerro-Amate</span>
+              <span class="etiqueta-zona-item">Sur</span>
+              <span class="etiqueta-zona-item">Bellavista</span>
+              <span class="etiqueta-zona-item">Bermejales</span>
+              <span class="etiqueta-zona-item">Pino Montano</span>
+              <span class="etiqueta-zona-item">San Jerónimo</span>
+            </div>
+          </article>
+
+          <!-- Tarjeta 2: Área Metropolitana y Aljarafe -->
+          <article class="tarjeta-zona-cobertura-item">
+            <div class="cabecera-tarjeta-zona">
+              <h3 class="titulo-zona-card"><i class="ri-road-map-line" aria-hidden="true"></i> Área Metropolitana</h3>
+              <span class="badge-tiempo-zona"><i class="ri-car-line" aria-hidden="true"></i> Cobertura Rápida</span>
+            </div>
+            <p class="texto-detalle-zonas">Servicio urgente con unidades móviles directas en los principales municipios
+              metropolitanos:</p>
+            <div class="contenedor-etiquetas-zonas">
+              <span class="etiqueta-zona-item">Mairena del Aljarafe</span>
+              <span class="etiqueta-zona-item">Dos Hermanas</span>
+              <span class="etiqueta-zona-item">Alcalá de Guadaíra</span>
+              <span class="etiqueta-zona-item">San Juan de Aznalfarache</span>
+              <span class="etiqueta-zona-item">Tomares</span>
+              <span class="etiqueta-zona-item">Camas</span>
+              <span class="etiqueta-zona-item">Bormujos</span>
+              <span class="etiqueta-zona-item">Castilleja de la Cuesta</span>
+              <span class="etiqueta-zona-item">Gines</span>
+              <span class="etiqueta-zona-item">La Rinconada</span>
+              <span class="etiqueta-zona-item">Santiponce</span>
+              <span class="etiqueta-zona-item">Espartinas</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Banner de consulta rápida de ubicación -->
+        <div class="banner-consulta-cobertura">
+          <div class="textos-banner-consulta">
+            <h4 class="titulo-banner-consulta">¿Tienes dudas sobre tu zona o tiempo de llegada?</h4>
+            <p class="parrafo-banner-consulta">Indícanos tu dirección o ubicación por WhatsApp y te confirmamos al
+              instante el técnico más cercano.</p>
+          </div>
+          <div class="acciones-banner-consulta">
+            <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" class="boton-principal"><i
+                class="ri-whatsapp-line" aria-hidden="true"></i> Consultar WhatsApp</a>
+            <a href="tel:+34600000000" class="boton-secundario"><i class="ri-phone-line" aria-hidden="true"></i> Llamar
+              ahora</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CTA FINAL ================= -->
+    <section class="seccion-cta-final">
+      <div class="contenido-seccion-cta-final">
+        <h2 class="titulo-cta-final">¿Necesitas un cerrajero de confianza en Sevilla?</h2>
+        <p class="descripcion-cta-final">Estamos disponibles las 24 horas para ayudarte cuando más lo necesitas. Llama
+          ahora o escríbenos por WhatsApp y cuéntanos qué problema tienes.</p>
+
+        <div class="cta-final-acciones">
+          <a href="tel:+34600000000" class="boton-principal"><i class="ri-phone-line" aria-hidden="true"></i> Llamar
+            ahora</a>
+          <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" class="boton-secundario"><i
+              class="ri-whatsapp-line" aria-hidden="true"></i> WhatsApp 24h</a>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="pie-pagina">
+    <div class="contenido-pie-pagina">
+
+      <!-- Bloque superior del footer: 4 columnas en flex -->
+      <div class="grid-pie-pagina">
+
+        <!-- Columna 1: Marca y descripción -->
+        <div class="columna-pie-pagina columna-marca-pie">
+          <a href="index.html#inicio" class="enlace-logo-pie">
+            <img src="img/logo.png" alt="Logo de Sevillaves" title="Sevillaves" class="logo-pie">
+          </a>
+          <p class="descripcion-pie-pagina">Cerrajero local en Sevilla especializado en urgencias 24 horas a domicilio.
+            Aperturas limpias sin daños, cambio de cerraduras de alta seguridad y precio cerrado antes de empezar.</p>
+          <div class="badge-tiempo-pie">
+            <i class="ri-time-line" aria-hidden="true"></i>
+            <span>Llegada estimada en <strong class="destacado">20–30 min</strong></span>
+          </div>
+        </div>
+
+        <!-- Columna 2: Navegación principal -->
+        <div class="columna-pie-pagina">
+          <h4 class="titulo-columna-pie">Navegación</h4>
+          <ul class="lista-enlaces-pie">
+            <li><a href="index.html#inicio" class="enlace-pie">Inicio</a></li>
+            <li><a href="index.html#servicios" class="enlace-pie">Servicios</a></li>
+            <li><a href="index.html#precios" class="enlace-pie">Tarifas y Precios</a></li>
+            <li><a href="index.html#cobertura" class="enlace-pie">Zona de cobertura</a></li>
+            <li><a href="sobre-nosotros.html" class="enlace-pie">Sobre Nosotros</a></li>
+            <li><a href="contacto.html" class="enlace-pie">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Servicios principales -->
+        <div class="columna-pie-pagina">
+          <h4 class="titulo-columna-pie">Servicios 24H</h4>
+          <ul class="lista-enlaces-pie">
+            <li><a href="cerrajero-urgente.html" class="enlace-pie">Apertura de puertas sin daños</a></li>
+            <li><a href="cambio-cerraduras.html" class="enlace-pie">Cambio de cerraduras</a></li>
+            <li><a href="cerrajero-urgente.html" class="enlace-pie">Puertas blindadas y acorazadas</a></li>
+            <li><a href="aperturas-coches.html" class="enlace-pie">Apertura de vehículos</a></li>
+            <li><a href="index.html#servicios" class="enlace-pie">Asesoramiento de seguridad</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Contacto urgente -->
+        <div class="columna-pie-pagina">
+          <h4 class="titulo-columna-pie">Contacto Urgente</h4>
+          <div class="bloque-contacto-pie">
+            <a href="tel:+34600000000" class="boton-contacto-pie boton-telefono-pie">
+              <i class="ri-phone-fill" aria-hidden="true"></i>
+              <span>Llamar ahora</span>
+            </a>
+            <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer"
+              class="boton-contacto-pie boton-whatsapp-pie">
+              <i class="ri-whatsapp-line" aria-hidden="true"></i>
+              <span>WhatsApp Directo</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Fila inferior del footer: Legales, Copyright y Créditos -->
+      <div class="barrita-inferior-pie">
+        <div class="legales-pie">
+          <a href="aviso-legal.html" class="enlace-legal-pie">Aviso legal</a>
+          <span class="separador-pie">•</span>
+          <a href="politica-privacidad.html" class="enlace-legal-pie">Política de privacidad</a>
+          <span class="separador-pie">•</span>
+          <a href="politica-cookies.html" class="enlace-legal-pie">Política de cookies</a>
+        </div>
+        <p class="copyright-pie">© 2026 Sevillaves. Todos los derechos reservados.</p>
+        <p class="creditos-pie">
+          Desarrollado por <a href="https://rubiqstudio.vercel.app/" target="_blank" rel="noopener noreferrer"
+            class="enlace-creditos-pie">RubiqStudio</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Botón Volver Arriba -->
+  <a href="#inicio" class="boton-volver-arriba" aria-label="Volver arriba">
+    <i class="ri-key-line" aria-hidden="true"></i>
+  </a>
+
 </body>
+
 </html>

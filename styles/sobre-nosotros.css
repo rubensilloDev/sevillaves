@@ -1,0 +1,1171 @@
+/* =========================================
+   ESTILOS DE LA PÁGINA SOBRE NOSOTROS
+========================================= */
+
+/* =========================================
+   HERO - SECCIÓN PRINCIPAL
+========================================= */
+
+/* Contenedor general del hero: imagen de fondo y posición relativa */
+.hero {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(130px, 15vw, 190px) 10% 8%;
+  background-image: url('../img/cerrajero-hero.webp');
+  background-size: cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Capa superpuesta con degradado de Accent (naranja) a Negro al medio y Blanco al final */
+.capa-degradado-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+      rgba(240, 78, 35, 0.88) 0%,
+      rgba(11, 31, 58, 0.5) 30%,
+      rgba(11, 31, 58, 0.2) 65%,
+      rgba(255, 255, 255, 0.98) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Contenedor del contenido del hero: dos bloques estructurados */
+.contenido-hero {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Primer bloque: título principal y botones de acción rápida */
+.hero-primer-div {
+  align-self: flex-start;
+  width: 85%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Encabezado principal H1 en color blanco con sombra protectora */
+.h1-hero {
+  font-size: var(--tamano-h1);
+  color: #FFFFFF;
+  font-weight: 900;
+  line-height: 90%;
+  letter-spacing: -2px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.95);
+}
+
+/* Palabra o término destacado en color Accent */
+.h1-hero .destacado {
+  color: var(--color-accent);
+}
+
+/* Contenedor de botones alineado a la izquierda bajo el H1 */
+.acciones-hero {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Ajustes de botones del hero */
+.acciones-hero .boton-principal,
+.acciones-hero .boton-secundario {
+  padding: 15px 30px;
+}
+
+/* Botón secundario del hero con fondo blanco */
+.acciones-hero .boton-secundario {
+  background-color: #FFFFFF;
+  color: var(--color-primario);
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.acciones-hero .boton-secundario:hover {
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+  border-color: var(--color-accent);
+}
+
+/* Segundo bloque: alineado a la derecha, contiene la propuesta de valor */
+.hero-segundo-div {
+  align-self: flex-end;
+  width: 60%;
+  text-align: right;
+}
+
+/* Párrafo descriptivo de bajada en color blanco con sombra */
+.texto-hero {
+  font-size: var(--tamano-texto-grande);
+  color: #FFFFFF;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  line-height: 1.6;
+  margin-left: auto;
+  max-width: 95%;
+}
+
+/* =========================================
+   DESTELLOS ORNAMENTALES FLOTANTES GLOBALES
+========================================= */
+
+/* Contenedor principal con posicionamiento relativo */
+.main-sobre-nosotros {
+  position: relative;
+  width: 100%;
+}
+
+/* Destellos globales por encima de todas las secciones sin recortes en los bordes */
+.main-sobre-nosotros .destello-naranja {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Posicionamiento vertical y lateral alternado de cada destello a lo largo de la página */
+.destello-flotante-1 {
+  top: 18%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.destello-flotante-2 {
+  top: 35%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.destello-flotante-3 {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.destello-flotante-4 {
+  top: 68%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.destello-flotante-5 {
+  top: 84%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+/* =========================================
+   HISTORIA Y TRAYECTORIA LOCAL
+========================================= */
+
+/* Contenedor general de la sección de historia */
+.seccion-historia {
+  width: 100%;
+  padding: 6% 10%;
+  background-color: var(--color-fondo);
+  position: relative;
+}
+
+/* Contenedor interno del contenido de historia */
+.contenido-historia {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Columna de textos descriptivos de la historia */
+.historia-textos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* Título de la sección historia */
+.titulo-historia {
+  font-size: var(--tamano-h2);
+  font-weight: 900;
+  line-height: 95%;
+  letter-spacing: -1.8px;
+  color: var(--color-primario);
+}
+
+/* Párrafo destacado de historia */
+.parrafo-historia-destacado {
+  font-size: var(--tamano-texto-grande);
+  line-height: 1.6;
+  color: var(--color-primario);
+  font-weight: 600;
+}
+
+/* Párrafo regular de historia */
+.parrafo-historia {
+  font-size: var(--tamano-texto-normal);
+  line-height: 1.7;
+  color: var(--color-texto-parrafo);
+}
+
+/* Columna visual con tarjeta y métricas de la historia */
+.historia-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Imagen representativa del equipo y taller móvil */
+.imagen-historia {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(240, 78, 35, 0.15);
+  box-shadow: 0 12px 30px rgba(11, 31, 58, 0.08);
+}
+
+/* Grid de métricas clave de la empresa */
+.metricas-historia-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* Tarjeta individual de métrica */
+.tarjeta-metrica {
+  background-color: var(--color-fondo-cards);
+  border: 1px solid rgba(240, 78, 35, 0.2);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.tarjeta-metrica:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+  box-shadow: 0 8px 20px rgba(240, 78, 35, 0.12);
+}
+
+/* Cifra numérica de la métrica */
+.cifra-metrica {
+  font-family: var(--fuente-encabezados);
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+/* Etiqueta explicativa de la métrica */
+.etiqueta-metrica {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primario);
+  line-height: 1.3;
+}
+
+/* =========================================
+   NUESTROS SERVICIOS DE CERRAJERÍA
+========================================= */
+
+/* Contenedor general de la sección servicios: fondo blanco uniforme */
+.seccion-servicios-resumen {
+  width: 100%;
+  padding: 6% 10%;
+  background-color: var(--color-fondo);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Contenedor interno del contenido de servicios */
+.contenido-servicios-resumen {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Encabezado central de la sección servicios */
+.encabezado-servicios-resumen {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Título H2 de servicios */
+.titulo-servicios-resumen {
+  font-size: var(--tamano-h2);
+  font-weight: 900;
+  line-height: 95%;
+  letter-spacing: -1.8px;
+  color: var(--color-primario);
+}
+
+/* Bajada de servicios */
+.bajada-servicios-resumen {
+  font-size: var(--tamano-texto-grande);
+  color: var(--color-texto-parrafo);
+  line-height: 1.5;
+}
+
+/* Grid Bento Asimétrico de 3 columnas */
+.grid-servicios-resumen {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.25rem 1.75rem;
+  margin-top: 1rem;
+  /* Espacio superior para acomodar los iconos flotantes */
+}
+
+/* Tarjeta individual de servicio */
+.tarjeta-servicio-resumen {
+  background-color: var(--color-fondo-cards);
+  border: 1px solid rgba(240, 78, 35, 0.2);
+  border-radius: 12px;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: visible;
+  /* Permite que el icono flote sobresaliendo por la parte superior */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.tarjeta-servicio-resumen:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-accent);
+  box-shadow: 0 12px 30px rgba(240, 78, 35, 0.15);
+}
+
+/* Tarjeta Bento que ocupa 2 columnas */
+.tarjeta-servicio-bento-2col {
+  grid-column: span 2;
+  padding: 0;
+}
+
+/* Estructura interna de 2 columnas para tarjetas Bento con imagen */
+.servicio-bento-contenido {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  height: 100%;
+  min-height: 250px;
+}
+
+/* Contenedor de textos */
+.servicio-info-textos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  padding-top: 1.5rem;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.tarjeta-servicio-bento-2col .servicio-info-textos {
+  padding: 2.25rem 2rem 2.25rem 2rem;
+  padding-top: 2.25rem;
+}
+
+/* Icono flotante montado SOBRE la esquina superior izquierda (borde) de cada tarjeta */
+.icono-servicio-box {
+  position: absolute;
+  top: -25px;
+  /* Montado mitad fuera / mitad dentro sobre el borde superior */
+  left: -0.75rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  border: 1.5px solid var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  font-size: 26px;
+  z-index: 10;
+  box-shadow: 0 6px 16px rgba(240, 78, 35, 0.18);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-servicio-resumen:hover .icono-servicio-box {
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+  transform: scale(1.03) rotate(-10deg);
+  box-shadow: 0 8px 20px rgba(240, 78, 35, 0.3);
+}
+
+/* Título H3 del servicio */
+.titulo-servicio-item {
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  color: var(--color-primario);
+}
+
+/* Descripción del servicio */
+.descripcion-servicio-item {
+  font-size: var(--tamano-texto-normal);
+  color: var(--color-texto-parrafo);
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Contenedor de la imagen en tarjetas Bento ocupando toda la columna */
+.servicio-bento-imagen-box {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  border-radius: 0 12px 12px 0;
+  border-left: 1px solid rgba(240, 78, 35, 0.15);
+}
+
+.imagen-servicio-bento {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.tarjeta-servicio-resumen:hover .imagen-servicio-bento {
+  transform: scale(1.06);
+}
+
+/* =========================================
+   MÁS DE UNA DÉCADA DE EXPERIENCIA
+========================================= */
+
+/* Contenedor general de la sección experiencia: fondo blanco */
+.seccion-experiencia {
+  width: 100%;
+  padding: 6% 10%;
+  background-color: var(--color-fondo);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Contenedor interno del contenido de experiencia */
+.contenido-experiencia {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Encabezado de la sección experiencia */
+.encabezado-experiencia {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Título H2 de experiencia */
+.titulo-experiencia {
+  font-size: var(--tamano-h2);
+  font-weight: 900;
+  line-height: 95%;
+  letter-spacing: -1.8px;
+  color: var(--color-primario);
+}
+
+/* Grid de las 3 tarjetas de experiencia */
+.grid-experiencia {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Tarjeta individual de experiencia */
+.tarjeta-experiencia {
+  background-color: var(--color-fondo-cards);
+  border: 1px solid var(--color-accent);
+  border-radius: 10px;
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-experiencia:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(240, 78, 35, 0.15);
+}
+
+/* Icono superior de experiencia */
+.icono-experiencia {
+  width: 58px;
+  height: 58px;
+  border-radius: 10px;
+  background-color: var(--color-background-icons);
+  border: 1px solid rgba(240, 78, 35, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  font-size: 28px;
+}
+
+/* Título H3 de experiencia */
+.titulo-experiencia-item {
+  font-size: 1.45rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.8px;
+  color: var(--color-primario);
+}
+
+/* Descripción de la experiencia */
+.descripcion-experiencia-item {
+  font-size: var(--tamano-texto-normal);
+  color: var(--color-texto-parrafo);
+  line-height: 1.65;
+}
+
+
+
+/* =========================================
+   TESTIMONIOS Y CARRUSEL INFINITO GOOGLE
+========================================= */
+
+/* Contenedor general de la sección testimonios */
+.seccion-testimonios {
+  width: 100%;
+  padding: 6% 0;
+  background-color: var(--color-fondo);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Contenedor interno del contenido de testimonios */
+.contenido-testimonios {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Encabezado principal de testimonios (con padding horizontal) */
+.encabezado-testimonios {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Título H2 de testimonios */
+.titulo-testimonios {
+  font-size: var(--tamano-h2);
+  font-weight: 900;
+  line-height: 95%;
+  letter-spacing: -1.8px;
+  color: var(--color-primario);
+}
+
+/* Tarjeta destacada de valoración Google */
+.tarjeta-google-score {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 16px;
+  background-color: var(--color-fondo-cards);
+  border: 1px solid var(--color-accent);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(240, 78, 35, 0.12);
+}
+
+/* Cifra de estrellas */
+.puntuacion-google {
+  font-family: var(--fuente-encabezados);
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--color-primario);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icono-estrella-oro {
+  color: #FFB800;
+  font-size: 1.6rem;
+}
+
+/* Texto de reseñas totales */
+.texto-google-score {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-secundario);
+}
+
+/* Subtítulo H3 de reseñas recientes */
+.subtitulo-resenas {
+  font-size: 1.75rem;
+  font-weight: 900;
+  letter-spacing: -0.8px;
+  color: var(--color-primario);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Contenedor del carrusel infinito con sombras de difuminado laterales */
+.contenedor-carrusel-testimonios {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+/* Sombra degradada blanca en el lateral izquierdo */
+.sombra-carrusel-izquierda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: clamp(60px, 12vw, 160px);
+  height: 100%;
+  background: linear-gradient(to right, #FFFFFF 25%, rgba(255, 255, 255, 0) 100%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Sombra degradada blanca en el lateral derecho */
+.sombra-carrusel-derecha {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: clamp(60px, 12vw, 160px);
+  height: 100%;
+  background: linear-gradient(to left, #FFFFFF 25%, rgba(255, 255, 255, 0) 100%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Pista en movimiento horizontal continuo */
+.pista-carrusel-testimonios {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: carrusel-infinito-marq 40s linear infinite;
+  will-change: transform;
+}
+
+/* Pausar el carrusel cuando el usuario interactúa con el cursor */
+.contenedor-carrusel-testimonios:hover .pista-carrusel-testimonios {
+  animation-play-state: paused;
+}
+
+/* Keyframes para el desplazamiento infinito sin cortes */
+@keyframes carrusel-infinito-marq {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Tarjeta individual del carrusel de testimonios */
+.tarjeta-testimonio {
+  width: 360px;
+  flex-shrink: 0;
+  background-color: var(--color-fondo-cards);
+  border: 1px solid rgba(240, 78, 35, 0.2);
+  border-radius: 12px;
+  padding: 1.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  user-select: none;
+}
+
+.tarjeta-testimonio:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent);
+  box-shadow: 0 12px 25px rgba(240, 78, 35, 0.14);
+}
+
+/* Cabecera del cliente con nombre, ubicación y estrellas */
+.cabecera-testimonio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Datos del cliente */
+.info-cliente-testimonio {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Nombre del cliente H4 */
+.nombre-cliente-testimonio {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--color-primario);
+}
+
+/* Ubicación o zona del cliente */
+.zona-cliente-testimonio {
+  font-size: 13px;
+  color: var(--color-texto-parrafo);
+  font-weight: 500;
+}
+
+/* Estrellas doradas */
+.estrellas-testimonio {
+  color: #FFB800;
+  display: flex;
+  gap: 3px;
+  font-size: 15px;
+}
+
+/* Cita o reseña del cliente */
+.cita-testimonio {
+  font-size: var(--tamano-texto-normal);
+  color: var(--color-texto-parrafo);
+  line-height: 1.6;
+  font-style: italic;
+  position: relative;
+}
+
+/* =========================================
+   DÓNDE ENCONTRARNOS / COBERTURA LOCAL MEJORADA
+========================================= */
+
+/* Contenedor general de la sección cobertura: fondo blanco */
+.seccion-cobertura-local {
+  width: 100%;
+  padding: 6% 10%;
+  background-color: var(--color-fondo);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Contenedor interno del contenido de cobertura */
+.contenido-cobertura-local {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Encabezado de la sección cobertura */
+.encabezado-cobertura-local {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Título H2 de cobertura */
+.titulo-cobertura-local {
+  font-size: var(--tamano-h2);
+  font-weight: 900;
+  line-height: 95%;
+  letter-spacing: -1.8px;
+  color: var(--color-primario);
+}
+
+/* Bajada explicativa de cobertura */
+.bajada-cobertura-local {
+  font-size: var(--tamano-texto-grande);
+  color: var(--color-texto-parrafo);
+  line-height: 1.6;
+}
+
+/* Grid de las 2 tarjetas de cobertura: Capital vs Metropolitana */
+.grid-tarjetas-cobertura {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Tarjeta individual de zona de cobertura */
+.tarjeta-zona-cobertura-item {
+  background-color: var(--color-fondo-cards);
+  border: 1px solid var(--color-accent);
+  border-radius: 12px;
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 8px 24px rgba(11, 31, 58, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-zona-cobertura-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(240, 78, 35, 0.12);
+}
+
+/* Cabecera de la tarjeta con badge e icono */
+.cabecera-tarjeta-zona {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Badge de tiempo en la tarjeta */
+.badge-tiempo-zona {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: rgba(240, 78, 35, 0.1);
+  border: 1px solid rgba(240, 78, 35, 0.25);
+  border-radius: 6px;
+  color: var(--color-accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Título H3 interior de la zona */
+.titulo-zona-card {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--color-primario);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.titulo-zona-card i {
+  color: var(--color-accent);
+  font-size: 24px;
+}
+
+/* Párrafo explicativo de zonas */
+.texto-detalle-zonas {
+  font-size: var(--tamano-texto-normal);
+  color: var(--color-texto-parrafo);
+  line-height: 1.6;
+}
+
+/* Contenedor flexible de etiquetas de zonas y barrios */
+.contenedor-etiquetas-zonas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Etiqueta individual de barrio o municipio */
+.etiqueta-zona-item {
+  padding: 8px 14px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(19, 49, 92, 0.15);
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primario);
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.etiqueta-zona-item:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* Banner inferior de consulta directa de ubicación */
+.banner-consulta-cobertura {
+  background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-secundario) 100%);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  color: #FFFFFF;
+}
+
+/* Textos del banner de consulta */
+.textos-banner-consulta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.titulo-banner-consulta {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.parrafo-banner-consulta {
+  font-size: var(--tamano-texto-normal);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Botonera del banner de consulta */
+.acciones-banner-consulta {
+  display: flex;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   CTA FINAL - SECCIÓN DE LLAMADA A LA ACCIÓN
+========================================= */
+
+/* Contenedor general de la sección CTA final */
+.seccion-cta-final {
+  width: 100%;
+  padding: 6% 10%;
+  background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-secundario) 100%);
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Contenedor interno del contenido de CTA final */
+.contenido-seccion-cta-final {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Título H2 del CTA final */
+.titulo-cta-final {
+  font-size: var(--tamano-h2);
+  font-weight: 900;
+  line-height: 95%;
+  letter-spacing: -1.8px;
+  color: #FFFFFF;
+}
+
+/* Descripción del CTA final */
+.descripcion-cta-final {
+  font-size: var(--tamano-texto-grande);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  max-width: 750px;
+}
+
+/* Contenedor de botones de acción en el CTA final */
+.cta-final-acciones {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+/* Botones en CTA final */
+.cta-final-acciones .boton-principal {
+  padding: 16px 32px;
+}
+
+.cta-final-acciones .boton-secundario {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 16px 32px;
+}
+
+.cta-final-acciones .boton-secundario:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #FFFFFF;
+}
+
+/* =========================================
+   RESPONSIVE - SOBRE NOSOTROS
+========================================= */
+
+@media (max-width: 1024px) {
+  .contenido-historia {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .grid-servicios-resumen {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tarjeta-servicio-bento-2col {
+    grid-column: span 2;
+  }
+
+  .grid-experiencia {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-tarjetas-cobertura {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-consulta-cobertura {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-primer-div {
+    width: 100%;
+  }
+
+  .hero-segundo-div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: clamp(100px, 18vw, 140px) 6% 10%;
+  }
+
+  .seccion-historia,
+  .seccion-servicios-resumen,
+  .seccion-experiencia,
+  .seccion-testimonios,
+  .seccion-cobertura-local,
+  .seccion-cta-final {
+    padding: 10% 6%;
+  }
+
+  .hero-segundo-div {
+    width: 100%;
+    text-align: left;
+  }
+
+  .texto-hero {
+    margin-left: 0;
+  }
+
+  .titulo-historia,
+  .titulo-servicios-resumen,
+  .titulo-experiencia,
+  .titulo-testimonios,
+  .titulo-cobertura-local,
+  .titulo-cta-final {
+    font-size: clamp(2.2rem, 7vw, 3rem);
+    line-height: 90%;
+  }
+
+  .grid-servicios-resumen {
+    grid-template-columns: 1fr;
+  }
+
+  .tarjeta-servicio-bento-2col {
+    grid-column: span 1;
+  }
+
+  .servicio-bento-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .tarjeta-servicio-bento-2col .servicio-info-textos {
+    padding: 1.75rem 1.5rem;
+    padding-top: 4.25rem;
+  }
+
+  .servicio-bento-imagen-box {
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+    border-left: none;
+    border-top: 1px solid rgba(240, 78, 35, 0.15);
+    order: 2;
+  }
+
+  .tarjeta-testimonio {
+    width: 290px;
+    padding: 1.5rem;
+  }
+
+  .metricas-historia-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tarjeta-google-score {
+    flex-direction: column;
+    text-align: center;
+    border-radius: 16px;
+    padding: 16px 20px;
+    gap: 8px;
+  }
+
+  .banner-consulta-cobertura {
+    padding: 1.5rem;
+  }
+
+  .acciones-banner-consulta {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .acciones-banner-consulta .boton-principal,
+  .acciones-banner-consulta .boton-secundario {
+    width: 100%;
+  }
+
+  .cta-final-acciones {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-final-acciones .boton-principal,
+  .cta-final-acciones .boton-secundario {
+    width: 100%;
+  }
+}

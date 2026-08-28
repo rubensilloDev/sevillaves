@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -71,9 +71,9 @@
     "priceRange": "€€",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Calle Sierpes, 45",
+      "streetAddress": "Calle San Luis, 148",
       "addressLocality": "Sevilla",
-      "postalCode": "41004",
+      "postalCode": "41003",
       "addressRegion": "Sevilla",
       "addressCountry": "ES"
     },
@@ -216,8 +216,42 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Cambio de Cerraduras y Bombines",
+            "name": "Cambio de Cerradura Básica",
             "url": "https://sevillave.vercel.app/cambio-cerraduras.html"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "80",
+            "maxPrice": "120",
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Cambio de Cerradura Seguridad Media",
+            "url": "https://sevillave.vercel.app/cambio-cerraduras.html"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "120",
+            "maxPrice": "180",
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Cambio de Cerradura Alta Seguridad",
+            "url": "https://sevillave.vercel.app/cambio-cerraduras.html"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "180",
+            "maxPrice": "300",
+            "priceCurrency": "EUR"
           }
         },
         {
@@ -264,7 +298,7 @@
 
         <!-- item-menu-desplegable-servicios -->
         <li class="item-menu item-menu-desplegable">
-          <a href="index.html#servicios" class="enlace-menu">Servicios <i class="ri-arrow-down-s-line icono-desplegable"
+          <a href="javascript:void(0)" class="enlace-menu">Servicios <i class="ri-arrow-down-s-line icono-desplegable"
               aria-hidden="true"></i></a>
           <ul class="submenu-servicios">
             <li class="item-submenu"><a href="cerrajero-urgente.html" class="enlace-submenu">Cerrajero Urgente en
@@ -275,7 +309,7 @@
           </ul>
         </li>
 
-        <li class="item-menu"><a href="index.html#sobre-nosotros" class="enlace-menu">Sobre Nosotros</a></li>
+        <li class="item-menu"><a href="sobre-nosotros.html" class="enlace-menu">Sobre Nosotros</a></li>
         <li class="item-menu"><a href="contacto.html" class="enlace-menu">Contacto</a></li>
 
         <!-- boton-cta-menu-movil -->
@@ -465,7 +499,7 @@
         <!-- opciones-imagen-col (columna derecha) -->
         <div class="opciones-imagen-col">
           <img src="img/collage-tipos-cerraduras.webp" alt="Cerrajero profesional instalando cerradura de seguridad"
-            class="imagen-opciones">
+            class="imagen-opciones" loading="lazy">
         </div>
 
       </div>
@@ -933,7 +967,7 @@
             <li><a href="index.html#servicios" class="enlace-pie">Servicios</a></li>
             <li><a href="index.html#precios" class="enlace-pie">Tarifas y Precios</a></li>
             <li><a href="index.html#cobertura" class="enlace-pie">Zona de cobertura</a></li>
-            <li><a href="index.html#sobre-nosotros" class="enlace-pie">¿Por qué elegirnos?</a></li>
+            <li><a href="sobre-nosotros.html" class="enlace-pie">Sobre Nosotros</a></li>
             <li><a href="index.html#faq" class="enlace-pie">Preguntas frecuentes</a></li>
           </ul>
         </div>

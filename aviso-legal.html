@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/legales.css">
   <script src="JavaScript/main.js" defer></script>
 </head>
 
@@ -65,11 +66,92 @@
     </section>
   </main>
 
+  <!-- ================= FOOTER ================= -->
   <footer class="pie-pagina">
-    <div class="barrita-inferior-pie">
-      <p class="copyright-pie">© 2026 Sevillaves. Todos los derechos reservados.</p>
+    <div class="contenido-pie-pagina">
+
+      <!-- Bloque superior del footer: 4 columnas en flex -->
+      <div class="grid-pie-pagina">
+
+        <!-- Columna 1: Marca y descripción -->
+        <div class="columna-pie-pagina columna-marca-pie">
+          <a href="index.html#inicio" class="enlace-logo-pie">
+            <img src="img/logo.png" alt="Logo de Sevillaves" title="Sevillaves" class="logo-pie">
+          </a>
+          <p class="descripcion-pie-pagina">Cerrajero local en Sevilla especializado en urgencias 24 horas a domicilio.
+            Aperturas limpias sin daños, cambio de cerraduras de alta seguridad y precio cerrado antes de empezar.</p>
+          <div class="badge-tiempo-pie">
+            <i class="ri-time-line" aria-hidden="true"></i>
+            <span>Llegada estimada en <strong class="destacado">20–30 min</strong></span>
+          </div>
+        </div>
+
+        <!-- Columna 2: Navegación principal -->
+        <div class="columna-pie-pagina">
+          <h4 class="titulo-columna-pie">Navegación</h4>
+          <ul class="lista-enlaces-pie">
+            <li><a href="index.html#inicio" class="enlace-pie">Inicio</a></li>
+            <li><a href="index.html#servicios" class="enlace-pie">Servicios</a></li>
+            <li><a href="index.html#precios" class="enlace-pie">Tarifas y Precios</a></li>
+            <li><a href="index.html#cobertura" class="enlace-pie">Zona de cobertura</a></li>
+            <li><a href="sobre-nosotros.html" class="enlace-pie">Sobre Nosotros</a></li>
+            <li><a href="contacto.html" class="enlace-pie">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Servicios principales -->
+        <div class="columna-pie-pagina">
+          <h4 class="titulo-columna-pie">Servicios 24H</h4>
+          <ul class="lista-enlaces-pie">
+            <li><a href="cerrajero-urgente.html" class="enlace-pie">Apertura de puertas sin daños</a></li>
+            <li><a href="cambio-cerraduras.html" class="enlace-pie">Cambio de cerraduras</a></li>
+            <li><a href="cerrajero-urgente.html" class="enlace-pie">Puertas blindadas y acorazadas</a></li>
+            <li><a href="aperturas-coches.html" class="enlace-pie">Apertura de vehículos</a></li>
+            <li><a href="index.html#servicios" class="enlace-pie">Asesoramiento de seguridad</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Contacto urgente -->
+        <div class="columna-pie-pagina">
+          <h4 class="titulo-columna-pie">Contacto Urgente</h4>
+          <div class="bloque-contacto-pie">
+            <a href="tel:+34600000000" class="boton-contacto-pie boton-telefono-pie">
+              <i class="ri-phone-fill" aria-hidden="true"></i>
+              <span>Llamar ahora</span>
+            </a>
+            <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer"
+              class="boton-contacto-pie boton-whatsapp-pie">
+              <i class="ri-whatsapp-line" aria-hidden="true"></i>
+              <span>WhatsApp Directo</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Fila inferior del footer: Legales, Copyright y Créditos -->
+      <div class="barrita-inferior-pie">
+        <div class="legales-pie">
+          <a href="aviso-legal.html" class="enlace-legal-pie">Aviso legal</a>
+          <span class="separador-pie">•</span>
+          <a href="politica-privacidad.html" class="enlace-legal-pie">Política de privacidad</a>
+          <span class="separador-pie">•</span>
+          <a href="politica-cookies.html" class="enlace-legal-pie">Política de cookies</a>
+        </div>
+        <p class="copyright-pie">© 2026 Sevillaves. Todos los derechos reservados.</p>
+        <p class="creditos-pie">
+          Desarrollado por <a href="https://rubiqstudio.vercel.app/" target="_blank" rel="noopener noreferrer"
+            class="enlace-creditos-pie">RubiqStudio</a>
+        </p>
+      </div>
+
     </div>
   </footer>
+
+  <!-- Botón Volver Arriba -->
+  <a href="#inicio" class="boton-volver-arriba" aria-label="Volver arriba">
+    <i class="ri-key-line" aria-hidden="true"></i>
+  </a>
 </body>
 
 </html>
