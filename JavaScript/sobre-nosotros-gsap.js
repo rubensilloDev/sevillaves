@@ -176,16 +176,31 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ================= CTA FINAL =================
-  // Bloque de llamada a la acción
-  gsap.from(".contenido-seccion-cta-final > *", {
+  // Encabezado, párrafo y contenedor de botones: entrada de izquierda a derecha
+  gsap.from([".titulo-cta-final", ".descripcion-cta-final", ".cta-final-acciones"], {
     scrollTrigger: {
       trigger: ".seccion-cta-final",
       start: "top 80%"
     },
-    y: 30,
+    x: -50,
     opacity: 0,
-    duration: 0.7,
+    duration: 0.8,
     stagger: 0.15,
-    ease: "power2.out"
+    ease: "power2.out",
+    clearProps: "transform"
+  });
+
+  // Imagen de la furgoneta: entrada de derecha a izquierda con delay de 1.5s
+  gsap.from(".imagen-furgoneta-cta", {
+    scrollTrigger: {
+      trigger: ".seccion-cta-final",
+      start: "top 80%"
+    },
+    x: 60,
+    opacity: 0,
+    duration: 0.5,
+    delay: 0.1,
+    ease: "power2.out",
+    clearProps: "transform"
   });
 });

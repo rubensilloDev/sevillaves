@@ -430,15 +430,13 @@ p {
   width: 100%;
   margin: 0;
   padding: 18px 8% 80px 8%;
-  background: linear-gradient(
-    180deg,
-    rgba(11, 31, 58, 0.85) 0%,
-    rgba(11, 31, 58, 0.65) 30%,
-    rgba(11, 31, 58, 0.4) 55%,
-    rgba(11, 31, 58, 0.2) 75%,
-    rgba(11, 31, 58, 0.05) 90%,
-    rgba(11, 31, 58, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(11, 31, 58, 0.85) 0%,
+      rgba(11, 31, 58, 0.65) 30%,
+      rgba(11, 31, 58, 0.4) 55%,
+      rgba(11, 31, 58, 0.2) 75%,
+      rgba(11, 31, 58, 0.05) 90%,
+      rgba(11, 31, 58, 0) 100%);
   border-radius: 0;
   z-index: 100;
 }
@@ -668,7 +666,7 @@ p {
   color: #FFFFFF;
   padding: 4% 6% 2%;
   position: relative;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
 }
 
 /* Contenedor del contenido interno del footer */
@@ -928,15 +926,13 @@ p {
     top: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(
-      180deg,
-      rgba(11, 31, 58, 0.85) 0%,
-      rgba(11, 31, 58, 0.65) 30%,
-      rgba(11, 31, 58, 0.4) 55%,
-      rgba(11, 31, 58, 0.2) 75%,
-      rgba(11, 31, 58, 0.05) 90%,
-      rgba(11, 31, 58, 0) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(11, 31, 58, 0.85) 0%,
+        rgba(11, 31, 58, 0.65) 30%,
+        rgba(11, 31, 58, 0.4) 55%,
+        rgba(11, 31, 58, 0.2) 75%,
+        rgba(11, 31, 58, 0.05) 90%,
+        rgba(11, 31, 58, 0) 100%);
     border-radius: 0;
     box-shadow: none;
     z-index: 1000;
@@ -1145,7 +1141,7 @@ p {
 
 .boton-volver-arriba i {
   font-size: 20px;
-  transform: rotate(0deg);
+  transform: rotate(-90deg);
   /* Estado natural: llave hacia la derecha */
   display: inline-block;
   transition: transform 0.3s ease;
@@ -1165,4 +1161,38 @@ p {
 .boton-volver-arriba:focus i {
   transform: rotate(-90deg);
   /* Rotación hacia arriba al pasar el cursor */
+}
+
+/* =========================================
+   BOTÓN FLOTANTE WHATSAPP (COMPONENTE GLOBAL)
+========================================= */
+.boton-flotante-whatsapp {
+  position: fixed;
+  bottom: 85px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  z-index: 99;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.boton-flotante-whatsapp i {
+  font-size: 24px;
+}
+
+.boton-flotante-whatsapp:hover,
+.boton-flotante-whatsapp:active,
+.boton-flotante-whatsapp:focus {
+  background-color: #20ba5a;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.8);
 }

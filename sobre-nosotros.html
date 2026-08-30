@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -45,13 +45,8 @@
   <link rel="stylesheet" href="styles/styles.css">
   <!-- Estilos específicos de la página Sobre Nosotros -->
   <link rel="stylesheet" href="styles/sobre-nosotros.css">
-  <!-- Estilos del widget de chat personalizado -->
-  <link rel="stylesheet" href="styles/chat-widget.css">
-
   <!-- Script JS sencillo para el menú responsive -->
   <script src="JavaScript/main.js" defer></script>
-  <!-- Script JS del widget de chat personalizado -->
-  <script src="JavaScript/chat-widget.js" defer></script>
   <!-- Librería GSAP y ScrollTrigger para animaciones -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
@@ -1027,15 +1022,20 @@
     <!-- ================= CTA FINAL ================= -->
     <section class="seccion-cta-final">
       <div class="contenido-seccion-cta-final">
-        <h2 class="titulo-cta-final">¿Necesitas un cerrajero de confianza en Sevilla?</h2>
-        <p class="descripcion-cta-final">Estamos disponibles las 24 horas para ayudarte cuando más lo necesitas. Llama
-          ahora o escríbenos por WhatsApp y cuéntanos qué problema tienes.</p>
+        <div class="cta-columna-texto">
+          <h2 class="titulo-cta-final">¿Necesitas un cerrajero de confianza en Sevilla?</h2>
+          <p class="descripcion-cta-final">Estamos disponibles las 24 horas para ayudarte cuando más lo necesitas. Llama
+            ahora o escríbenos por WhatsApp y cuéntanos qué problema tienes.</p>
 
-        <div class="cta-final-acciones">
-          <a href="tel:+34600000000" class="boton-principal"><i class="ri-phone-line" aria-hidden="true"></i> Llamar
-            ahora</a>
-          <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" class="boton-secundario"><i
-              class="ri-whatsapp-line" aria-hidden="true"></i> WhatsApp 24h</a>
+          <div class="cta-final-acciones">
+            <a href="tel:+34600000000" class="boton-principal"><i class="ri-phone-line" aria-hidden="true"></i> Llamar
+              ahora</a>
+            <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" class="boton-secundario"><i
+                class="ri-whatsapp-line" aria-hidden="true"></i> WhatsApp 24h</a>
+          </div>
+        </div>
+        <div class="cta-columna-imagen">
+          <img src="img/furgoneta-hero-sin-fondo.png" alt="Furgoneta Cerrajero Express Sevilla" class="imagen-furgoneta-cta" loading="lazy">
         </div>
       </div>
     </section>
@@ -1123,6 +1123,11 @@
 
     </div>
   </footer>
+
+  <!-- Botón Flotante WhatsApp -->
+  <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" class="boton-flotante-whatsapp" aria-label="Contactar por WhatsApp">
+    <i class="ri-whatsapp-line" aria-hidden="true"></i>
+  </a>
 
   <!-- Botón Volver Arriba -->
   <a href="#inicio" class="boton-volver-arriba" aria-label="Volver arriba">
