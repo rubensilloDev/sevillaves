@@ -66,4 +66,4 @@ Allow: /
 # --------------------------------------------------
 # 4. SITEMAP
 # --------------------------------------------------
-Sitemap: https://sevillave.vercel.app/sitemap.xml
+Sitemap: https://sevillaves.vercel.app/sitemap.xml
