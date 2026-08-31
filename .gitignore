@@ -17,3 +17,8 @@
 !img/**
 !fonts/
 !fonts/**
+
+# SEO y rastreo
+!robots.txt
+!sitemap.xml
+

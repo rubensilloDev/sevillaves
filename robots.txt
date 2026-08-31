@@ -1,0 +1,69 @@
+# ==================================================
+# robots.txt — Cerrajero Express Sevilla
+# Última actualización: 2026-08-23
+# ==================================================
+
+
+# --------------------------------------------------
+# 1. MOTORES DE BÚSQUEDA TRADICIONALES
+# Acceso completo a todo el contenido público.
+# Bloqueamos únicamente páginas sin valor SEO.
+# --------------------------------------------------
+User-agent: *
+Allow: /
+
+# Páginas legales: sin valor SEO, no indexar
+Disallow: /aviso-legal.html
+Disallow: /politica-cookies.html
+Disallow: /politica-privacidad.html
+
+# Página de error: nunca debe rastrearse
+Disallow: /404.html
+
+
+# --------------------------------------------------
+# 2. BOTS DE ENTRENAMIENTO DE IA (BLOQUEADOS)
+# No queremos que usen nuestro contenido para
+# entrenar modelos de lenguaje sin nuestro permiso.
+# --------------------------------------------------
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+
+# --------------------------------------------------
+# 3. BOTS DE BÚSQUEDA POR IA (PERMITIDOS)
+# Estos bots alimentan resultados de Perplexity,
+# ChatGPT Search, etc. Queremos ser citados en IA.
+# --------------------------------------------------
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+
+# --------------------------------------------------
+# 4. SITEMAP
+# --------------------------------------------------
+Sitemap: https://sevillave.vercel.app/sitemap.xml
