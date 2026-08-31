@@ -1241,7 +1241,7 @@
 
   .acciones-hero {
     flex-direction: column;
-    width: 60%;
+    width: 100%;
     align-items: center;
     gap: 12px;
   }

@@ -24,6 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const panelTarget = document.getElementById(`panel-${idTab}`);
         if (panelTarget) {
           panelTarget.classList.add('activo');
+
+          // Animación escalonada al cambiar de pestaña
+          const tarjetasPaso = panelTarget.querySelectorAll('.tarjeta-paso-proceso');
+          if (typeof gsap !== 'undefined' && tarjetasPaso.length > 0) {
+            gsap.fromTo(tarjetasPaso,
+              { y: 25, opacity: 0 },
+              { y: 0, opacity: 1, duration: 0.4, stagger: 0.08, ease: 'power2.out' }
+            );
+          }
         }
       });
     });

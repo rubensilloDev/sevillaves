@@ -1433,13 +1433,50 @@
     gap: 2.5rem;
   }
 
+  /* Encabezado y botones: flujo normal, sube y desaparece al scrollear */
   .columna-texto-porque {
     width: 100%;
     position: static;
   }
 
+  /* Lista de tarjetas con separación vertical entre cada una */
   .lista-porque {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Tarjetas de garantía: efecto baraja escalonado en cascada idéntico a PC */
+  .porque-item {
+    position: sticky;
+    background-color: var(--color-fondo-cards);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(11, 31, 58, 0.12);
+  }
+
+  .porque-item:nth-child(1) {
+    top: 60px;
+  }
+
+  .porque-item:nth-child(2) {
+    top: 80px;
+  }
+
+  .porque-item:nth-child(3) {
+    top: 100px;
+  }
+
+  .porque-item:nth-child(4) {
+    top: 120px;
+  }
+
+  .porque-item:nth-child(5) {
+    top: 150px;
+  }
+
+  .porque-item:nth-child(6) {
+    top: 170px;
   }
 
   .h2-porque {

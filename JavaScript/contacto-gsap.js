@@ -97,15 +97,19 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  // Paneles de pasos (animación al contenedor padre por hovers): abajo a arriba
-  gsap.from(".panel-proceso.activo", {
-    scrollTrigger: {
-      trigger: ".contenedor-pestanas-proceso",
-      start: "top 80%"
-    },
-    y: 50,
-    opacity: 0,
-    duration: 0.8,
-    ease: "power2.out"
-  });
+  // Tarjetas de pasos en vertical: animación escalonada al hacer scroll
+  const tarjetasPasos = gsap.utils.toArray(".panel-proceso.activo .tarjeta-paso-proceso");
+  if (tarjetasPasos.length > 0) {
+    gsap.from(tarjetasPasos, {
+      scrollTrigger: {
+        trigger: ".seccion-proceso-pasos",
+        start: "top 75%"
+      },
+      y: 35,
+      opacity: 0,
+      duration: 0.7,
+      stagger: 0.15,
+      ease: "power2.out"
+    });
+  }
 });
