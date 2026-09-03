@@ -258,9 +258,44 @@
     }
   }
   </script>
-</head>
+  <!-- Google Consent Mode v2: block by default BEFORE gtag loads -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied'
+    });
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCR5K804N5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VCR5K804N5');
+  </script>
+  <!-- Cookie banner styles -->
+  <link rel="stylesheet" href="styles/cookies.css">
+  <!-- Cookie consent logic -->
+  <script src="JavaScript/cookies.js" defer></script></head>
 
 <body>
+  <!-- Cookie consent banner -->
+  <div id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <span class="cookie-banner__icon">&#x1F36A;</span>
+    <div class="cookie-banner__body">
+      <p class="cookie-banner__title">Usamos cookies</p>
+      <p class="cookie-banner__text">
+        Utilizamos Google Analytics para entender c&#x00F3;mo usas nuestra web y mejorarla.
+        Consulta nuestra <a href="politica-cookies.html">pol&#x00ED;tica de cookies</a>.
+      </p>
+    </div>
+    <div class="cookie-banner__actions">
+      <button class="cookie-btn cookie-btn--reject" id="cookie-btn-reject">Rechazar</button>
+      <button class="cookie-btn cookie-btn--accept" id="cookie-btn-accept">Aceptar</button>
+    </div>
+  </div>
 
   <!-- ================= HEADER / NAVEGACIÓN ================= -->
   <header class="cabecera">
