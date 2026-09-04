@@ -3,6 +3,21 @@
 ========================================= */
 
 /* =========================================
+   ANCHO MÁXIMO DEL CONTENIDO INTERNO
+========================================= */
+.contenido-hero,
+.contenido-casos,
+.contenido-opciones,
+.contenido-precios,
+.contenido-proceso,
+.contenido-marcas,
+.contenido-cta-final {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================
    HERO - SECCIÓN PRINCIPAL
 ========================================= */
 
@@ -36,7 +51,7 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -295,7 +310,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -401,7 +416,7 @@
 
 .contenido-precios {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -726,7 +741,7 @@
 
 .contenido-cta-final {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

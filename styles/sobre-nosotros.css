@@ -3,6 +3,21 @@
 ========================================= */
 
 /* =========================================
+   ANCHO MÁXIMO DEL CONTENIDO INTERNO
+========================================= */
+.contenido-hero,
+.contenido-historia,
+.contenido-servicios-resumen,
+.contenido-experiencia,
+.contenido-testimonios,
+.contenido-cobertura-local,
+.contenido-seccion-cta-final {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================
    HERO - SECCIÓN PRINCIPAL
 ========================================= */
 
@@ -40,7 +55,7 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 1350px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -182,7 +197,7 @@
 /* Contenedor interno del contenido de historia */
 .contenido-historia {
   width: 100%;
-  max-width: 1350px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -298,7 +313,7 @@
 /* Contenedor interno del contenido de servicios */
 .contenido-servicios-resumen {
   width: 100%;
-  max-width: 1350px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -787,7 +802,7 @@
 /* Contenedor interno del contenido de cobertura */
 .contenido-cobertura-local {
   width: 100%;
-  max-width: 1350px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1003,7 +1018,7 @@
 /* Contenedor interno del contenido de CTA final */
 .contenido-seccion-cta-final {
   width: 100%;
-  max-width: 1350px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1.15fr;

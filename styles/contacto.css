@@ -3,6 +3,18 @@
 ========================================= */
 
 /* =========================================
+   ANCHO MÁXIMO DEL CONTENIDO INTERNO
+========================================= */
+.contenido-hero,
+.contenido-canales-contacto,
+.contenido-formulario-contacto,
+.contenido-proceso-pasos {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================
    HERO - SECCIÓN PRINCIPAL
 ========================================= */
 
